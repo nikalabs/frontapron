@@ -1,0 +1,109 @@
+/*
+
+Theme Name: FRONT APRON
+Theme URI: http://www.nikalabs.com/
+Author: Nika Labs
+Author URI: http://www.nikalabs.com/
+Description: FRONT APRON SITE VER
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Text Domain: fa
+Domain Path: /languages/
+Tags:
+*/
+
+/*START making Changes to override css*/
+
+.no-margin{
+	margin:0px;
+}
+.no-padding{
+	padding:0px;
+}
+/* Header-Nav bar */
+
+.navbar-default{background-color:#7ab317;}
+header{background-color:#32328f;}
+.navbar-brand{height:80px; padding:15px 0px;}
+header .container .navbar-btn{float:right; margin-top:20px;}
+.navbar-default .navbar-nav>li>a {color:#ffffff;}
+.navbar-default .navbar-nav>li{border-right:1px solid #ffffff; margin:5px 0px 5px 0px;}
+.navbar-default .navbar-nav>li:last-child{border:0px;}
+.navbar-nav>li>a{padding-top:10px; padding-bottom:10px;}
+.navbar-form .search{background-color:transparent; color:transparent; border:0px; }
+
+/* Main - Home */
+
+h1{font-family: 'Lato', sans-serif;
+font-weight:800; 
+color:#32328f;
+font-size:30px;
+font-style:italic;
+}
+h1 small{float:right;}
+.thumbnail{padding:0px;}
+.thumbnail>img{width:100%;}
+.thumbnail .caption{padding-top:0px;}
+.thumbnail .caption h3{font-size:18px; color:#32328f; font-weight:500;}
+.thumbnail .caption p{padding-right:10px; padding-bottom:20px;}
+.thumbnail .caption .company-logo{float:right; margin-top:-10px;}
+.thumbnail .caption h5{font-size:14px; color:#666666;}
+.thumbnail .caption h5 small{float:right; font-size:30px; font-family:'Lato', sans-serif; color:#70a711; margin-top:-10px;}
+/* Footer */
+.footer{background-color:#262626; color:#ffffff; padding-top:30px; margin-top:70px;}
+.footer ul{list-style:none; margin-left:0px; padding-left:10px;}
+.footer a{color:#ffffff;}
+.footer .copy-right{padding-left:20px; font-size:12px;}
+.footer-icons{text-align:right; width:100%; float:left; padding-bottom:20px;}
+.footer-icons .appstore{padding-left:20px;}
+.footer-socials{text-align:right; }
+.footer-socials .gplus{padding-left:10px;}
+.footer-socials .twitter{padding-left:10px;}
+.thumbnail .image-container {
+    position: relative;
+    width: 100%;
+    
+}
+.thumbnail .image-container .no-margin{width:100%;}
+.thumbnail .image-container .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(115, 117, 243, 0.6);
+}
+.thumbnail .image-container .after p{
+	text-align:center;
+	padding-top:134px;
+	color:#ffffff;
+	font-size:18px;
+}
+.thumbnail .image-container .dropdown-toggle{
+	position:absolute;
+	right:0;
+	z-index:1000000;
+}
+.thumbnail .image-container .dropdown-menu{
+	right:auto;
+	top:25px;
+	left:92%;
+	background-color:rgba(110, 157, 8, 0.9);
+	border-radius:0px;
+	box-shadow:0px 0px 0px ;
+
+}
+.thumbnail .image-container .dropdown-menu li a{
+	color:#ffffff;
+	font-size:14px;
+	}
+.thumbnail .image-container	.dropdown-menu>li>a:hover{
+	background-color:transparent;
+	color:#000000;
+
+}
+.thumbnail .image-container .dropdown-menu>li>a{
+	padding:3px 10px;
+}
