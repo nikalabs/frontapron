@@ -107,3 +107,108 @@ h1 small{float:right;}
 .thumbnail .image-container .dropdown-menu>li>a{
 	padding:3px 10px;
 }
+
+
+
+
+
+/* Sign-up Page */
+.signin-form .form-group p{color:#636466; font-family:'Lato', sans-serif; font-size:15px;}
+.signin-form .form-group span a{color:#636466; font-family:'Lato', sans-serif; font-size:13px; font-style:italic;}
+.signin-form .form-group input{background-color:#cccccc; box-shadow:0px 0px 0px;}
+.signin-form .form-group input{color:#ffffff !important;}
+.signin-form input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ffffff;
+}
+.signin-form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ffffff;
+}
+.signin-form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ffffff;
+}
+.signin-form input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ffffff;
+}
+.signin-form .form-group #pass{width:50%;}
+.signin-form .btn{width:190px; background-color:#7ab317; color:#ffffff; border:0px;}
+.signup-form .form-group p{color:#636466; font-family:'Lato', sans-serif; font-size:15px;}
+.signup-form .first-name{width:48%; float:left;}
+.signup-form .last-name{width:50%; float:right; }
+.signup-form .password{width:48%; float:left;}
+.signup-form .again{width:50%; float:right;}
+.signup-form .form-group span{color:#636466; font-family:'Lato', sans-serif; font-size:13px; font-style:italic;}
+.signup-form .form-group input{background-color:#cccccc; box-shadow:0px 0px 0px;}
+.signup-form .form-group input{color:#ffffff !important;}
+.signup-form input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ffffff;
+}
+.signup-form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ffffff;
+}
+.signup-form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ffffff;
+}
+.signup-form input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ffffff;
+}
+.signup-form .btn{width:190px; background-color:#7ab317; color:#ffffff; border:0px;}
+.col-md-6.second{width:45%; padding-left:20px; margin-bottom:170px;}
+.col-md-6.first{width:45%; padding-left:40px; margin-bottom:170px;}
+.signup-form{border-left:1px solid #7ab317; padding-left:40px;}
+.form-group input.pass{
+background-image: url(../images/check-mark.png);
+background-repeat: no-repeat;
+background-position: 95% 7px;
+}
+
+
+
+/* Special Page */
+.product-image img{width:100%; padding-top:20px;}
+.shares{margin-top:20px;}
+.shares .stButton .stMainServices {height:24px;}
+h2{font-family: 'Lato', sans-serif;
+font-weight:600; 
+color:#32328f;
+font-size:26px;
+}
+.product-desp{width:50%; float:left;}
+.product-desp p{font-size:14px;}
+.create{width:48%; float:right; padding-top:20px;}
+.create .create-btn{float:right; width:175px; background-color:#7ab317; border:0px; color:#ffffff;}
+.create .follow{
+ width: 172px;
+float: right;
+text-align: center;
+padding-top:10px;
+padding-bottom:10px;
+}
+.create .time{
+width: 172px;
+float: right;
+text-align: center;
+padding-right:40px;
+}
+.create .time{float:right;}
+.glyphicon-heart{font-size:25px; color:#32328f;}
+.glyphicon-time{font-size:25px; color:#32328f;}
+.create .follow .company-name{font-weight:bold; color:#32328f;}
+.create .time .txt{font-size:15px; padding-left:15px;}
+.create .follow .txt{font-size:15px; padding-left:5px;}
+.company-map{width:70%; float:left; margin-top:20px; margin-bottom:50px;}
+.company-address{
+width: 30%;
+float: right;
+padding-top: 20px;
+padding-left: 10px;
+}
+h3{
+font-family: 'Lato', sans-serif;
+font-weight:600; 
+color:#32328f;
+font-size:20px;
+}
+
+
+
+
