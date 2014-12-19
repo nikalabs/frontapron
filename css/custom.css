@@ -265,3 +265,32 @@ margin-top:20px;
 #market-table .viewer .glyphicon-eye-open{color:#77787b; padding-right:5px;}
 #market-table .name{color:#636466; font-family:'Lato', sans-serif; padding-top:15px;}
 #market-table .day-badge-off{background-image:url(../images/day-badge-off.png); text-align:center; height:48px; background-position: right center; color:#ffffff; background-repeat:no-repeat; padding-left:20px;}
+
+
+/* Giving Back */
+.giving-txt{font-size:14px; font-family:'Lato', sans-serif; color:#414042; }
+.alphabet{font-size:18px; color:#32328f; font-family:'Lato', sans-serif; word-spacing:6.5px;}
+.alphabet a {color:#32328f; }
+.giving .thumbnail .image-container .dropdown-toggle{
+position: absolute;
+left: 0;
+z-index: 1000000;
+}
+.tick{width:45px; height:45px; background-color:#7ab317; text-align:center;}
+.tick .glyphicon-ok{font-size:24px; color:#ffffff; padding-top:10px;}
+.giving .thumbnail .image-container .dropdown-menu {
+right: auto;
+top: 40px;
+left: 0%;
+background-color: rgba(110, 157, 8, 0.9);
+border-radius: 0px;
+box-shadow: 0px 0px 0px;
+}
+.heart{width:45px; height:45px; background-color:#ffffff; text-align:center;}
+.heart img{padding-top:10px;}
+.giving .school{width:100%; height:294px; background-color:#32328f; padding:10px; }
+.giving .school h4{color:#ffffff; font-size:18px; font-family:'Lato', sans-serif; padding:10px;}
+.giving .school a> img{padding-top:60px;}
+.giving .thumbnail{border:0px; border-bottom:3px solid #d9d9d9;;}
+.giving{margin-bottom:50px;}
+.giving .caption h3{color:#414042;}
