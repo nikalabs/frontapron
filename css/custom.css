@@ -294,3 +294,44 @@ box-shadow: 0px 0px 0px;
 .giving .thumbnail{border:0px; border-bottom:3px solid #d9d9d9;;}
 .giving{margin-bottom:50px;}
 .giving .caption h3{color:#414042;}
+
+
+/* Update Profile */
+
+.update-form .form-group p{color:#636466; font-family:'Lato', sans-serif; font-size:15px;}
+.update-form .first-name{width:48%; float:left;}
+.update-form .last-name{width:50%; float:right; }
+.update-form .password{width:48%; float:left;}
+.update-form .username input{width:48%;}
+.update-form .again{width:50%; float:right;}
+.update-form .form-group span{color:#636466; font-family:'Lato', sans-serif; font-size:13px; font-style:italic;}
+.update-form .form-group input{background-color:#cccccc; box-shadow:0px 0px 0px;}
+.update-form .form-group input{color:#ffffff !important;}
+.update-form input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ffffff;
+}
+.update-form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ffffff;
+}
+.update-form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ffffff;
+}
+.update-form input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ffffff;
+}
+.update-form .btn{width:190px; background-color:#7ab317; color:#ffffff; border:0px;}
+.update-form .form-group input.pass{
+background-image: url(../images/check-mark.png);
+background-repeat: no-repeat;
+background-position: 95% 7px;
+}
+
+.upgrade-div .upgrade{width:260px; background-color:#e6e7e8; border:1px solid #32328f; border-radius:3px; color:#32328f; padding:3px 0px 3px 0px; margin-bottom:20px; margin-top:10px;}
+.upgrade-div .upgrade a {color:#32328f;}
+.update-form .cancel{
+	width: 80px;
+background-color: #636466;
+margin-right: 10px;
+}
+.update-form .update{width:170px;}
+.update-form{margin-bottom:210px;}
