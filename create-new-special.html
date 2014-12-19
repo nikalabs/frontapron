@@ -1,0 +1,387 @@
+<!doctype html>
+ <html>
+ <head>
+      	 <meta charset="utf-8">
+      	 <meta name="viewport" content="width=device-weidth, initial-scale=1.0">
+      	 <title>Front Apron</title>
+      	 <link href="css/bootstrap.min.css" rel="stylesheet">
+      	 <link href="css/custom.css" rel="stylesheet">
+      	 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+         <SCRIPT LANGUAGE='JAVASCRIPT' TYPE='TEXT/JAVASCRIPT'>
+<!--
+var popupWindow=null;
+function popup(mypage,myname,w,h,pos,infocus){
+
+if (pos == 'random')
+{LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+else
+{LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
+settings='width='+ w + ',height='+ h + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=no,location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';popupWindow=window.open('',myname,settings);
+if(infocus=='front'){popupWindow.focus();popupWindow.location=mypage;}
+if(infocus=='back'){popupWindow.blur();popupWindow.location=mypage;popupWindow.blur();}
+
+}
+// -->
+</script>
+
+
+ </head>
+ <body>
+   <header>
+ 	 <div class="container">
+ 		<a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+ 		
+ 		
+ 	</div>
+   </header>
+ <!-- Start of Navigation Bar -->
+   <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+    	 <div class="navbar-header">
+    	 	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-FA-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    	
+       </div>
+    <div class="collapse navbar-collapse" id="bs-FA-navbar-collapse-1">
+    	<ul class="nav navbar-nav">
+    		<li><a href="index.html">HOME</a></li>
+    		<li><a href="index.html">BOOKMARKS</a></li>
+    		<li><a href="index.html">MY SPECIALS</a></li>
+    		         
+    	</ul>
+    	<form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Coffee">
+                  <input type="text" class="form-control" placeholder="San Jose">
+                </div>
+                <button type="submit" class="btn btn-default search"><img src="images/search-icon.png"></button>
+        </form>
+      </div>
+
+    </div>
+   </nav>
+<!-- Start of Main Body -->
+   <div class="main">
+   	<div class="container">
+ <div class="row"><!-- Start of the First Row -->
+  <div class="col-md-4 first"><!-- Start of the First Column -->
+   	  <div class="page-header">
+        <h1>Create New Special</h1>
+      </div>
+      <form class="create-form " role="sign-in" action="mailto:youremail@email.com" method="post">
+        <div class="form-group">
+          <p>Product Name<br/>
+          <input type="text" class="form-control product" placeholder="Enter Product Name..." name="product"></p>
+           <p>Special Offer<br/>
+          <input type="text" class="form-control offer" placeholder="Enter Offer..." name="offer"></p>
+           <p class="price">Price<br/>
+          <input type="number" class="form-control" placeholder="$5" name="price" id="price" min="1"></p>
+          <p class="quantity">Qty<br/>
+          <input type="number" class="form-control" placeholder="1" name="quantity" id="quantity" step="1" min="1"></p>
+          <div class="starts">
+          <p>Starts<br/>
+           <input type="date" name="bday" class="form-control start" placeholder="Dec 12,, 2014" name="start-date" id="start-date"></p><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu date" role="menu">
+            <li><script language="javascript" type="text/javascript">
+var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+//  DECLARE AND INITIALIZE VARIABLES
+var Calendar = new Date();
+
+var year = Calendar.getFullYear();     // Returns year
+var month = Calendar.getMonth();    // Returns month (0-11)
+var today = Calendar.getDate();    // Returns day (1-31)
+var weekday = Calendar.getDay();    // Returns day (1-31)
+
+var DAYS_OF_WEEK = 7;    // "constant" for number of days in a week
+var DAYS_OF_MONTH = 31;    // "constant" for number of days in a month
+var cal;    // Used for printing
+
+Calendar.setDate(1);    // Start the calendar day at '1'
+Calendar.setMonth(month);    // Start the calendar month at now
+
+
+/* VARIABLES FOR FORMATTING
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+      tags to customize your caledanr's look. */
+
+var TR_start = '<TR>';
+var TR_end = '</TR>';
+var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+var TD_start = '<TD WIDTH="30"><CENTER>';
+var TD_end = '</CENTER></TD>';
+
+/* BEGIN CODE FOR CALENDAR
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+tags to customize your calendar's look.*/
+
+cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+cal += TR_start;
+
+//   DO NOT EDIT BELOW THIS POINT  //
+
+// LOOPS FOR EACH DAY OF WEEK
+for(index=0; index < DAYS_OF_WEEK; index++)
+{
+
+// BOLD TODAY'S DAY OF WEEK
+if(weekday == index)
+cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+
+// PRINTS DAY
+else
+cal += TD_start + day_of_week[index] + TD_end;
+}
+
+cal += TD_end + TR_end;
+cal += TR_start;
+
+// FILL IN BLANK GAPS UNTIL TODAY'S DAY
+for(index=0; index < Calendar.getDay(); index++)
+cal += TD_start + '  ' + TD_end;
+
+// LOOPS FOR EACH DAY IN CALENDAR
+for(index=0; index < DAYS_OF_MONTH; index++)
+{
+if( Calendar.getDate() > index )
+{
+  // RETURNS THE NEXT DAY TO PRINT
+  week_day =Calendar.getDay();
+
+  // START NEW ROW FOR FIRST DAY OF WEEK
+  if(week_day == 0)
+  cal += TR_start;
+
+  if(week_day != DAYS_OF_WEEK)
+  {
+
+  // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES
+  var day  = Calendar.getDate();
+
+  // HIGHLIGHT TODAY'S DATE
+  if( today==Calendar.getDate() )
+  cal += highlight_start + day + highlight_end + TD_end;
+
+  // PRINTS DAY
+  else
+  cal += TD_start + day + TD_end;
+  }
+
+  // END ROW FOR LAST DAY OF WEEK
+  if(week_day == DAYS_OF_WEEK)
+  cal += TR_end;
+  }
+
+  // INCREMENTS UNTIL END OF THE MONTH
+  Calendar.setDate(Calendar.getDate()+1);
+
+}// end for loop
+
+cal += '</TD></TR></TABLE></TABLE>';
+
+//  PRINT CALENDAR
+document.write(cal);
+
+//  End -->
+</script>
+</li>
+            
+          </ul>
+        </div>
+                   <div class="expires">
+                    <p>Expires<br/>
+           <input type="date" name="bday" class="form-control expire" placeholder="Dec 12,, 2014" name="expire-date" id="expire-date"></p><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a>
+            <ul class="dropdown-menu date" role="menu">
+            <li><script language="javascript" type="text/javascript">
+var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
+var month_of_year = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+
+//  DECLARE AND INITIALIZE VARIABLES
+var Calendar = new Date();
+
+var year = Calendar.getFullYear();     // Returns year
+var month = Calendar.getMonth();    // Returns month (0-11)
+var today = Calendar.getDate();    // Returns day (1-31)
+var weekday = Calendar.getDay();    // Returns day (1-31)
+
+var DAYS_OF_WEEK = 7;    // "constant" for number of days in a week
+var DAYS_OF_MONTH = 31;    // "constant" for number of days in a month
+var cal;    // Used for printing
+
+Calendar.setDate(1);    // Start the calendar day at '1'
+Calendar.setMonth(month);    // Start the calendar month at now
+
+
+/* VARIABLES FOR FORMATTING
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+      tags to customize your caledanr's look. */
+
+var TR_start = '<TR>';
+var TR_end = '</TR>';
+var highlight_start = '<TD WIDTH="30"><TABLE CELLSPACING=0 BORDER=1 BGCOLOR=DEDEFF BORDERCOLOR=CCCCCC><TR><TD WIDTH=20><B><CENTER>';
+var highlight_end   = '</CENTER></TD></TR></TABLE></B>';
+var TD_start = '<TD WIDTH="30"><CENTER>';
+var TD_end = '</CENTER></TD>';
+
+/* BEGIN CODE FOR CALENDAR
+NOTE: You can format the 'BORDER', 'BGCOLOR', 'CELLPADDING', 'BORDERCOLOR'
+tags to customize your calendar's look.*/
+
+cal =  '<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=0 BORDERCOLOR=BBBBBB><TR><TD>';
+cal += '<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>' + TR_start;
+cal += '<TD COLSPAN="' + DAYS_OF_WEEK + '" BGCOLOR="#EFEFEF"><CENTER><B>';
+cal += month_of_year[month]  + '   ' + year + '</B>' + TD_end + TR_end;
+cal += TR_start;
+
+//   DO NOT EDIT BELOW THIS POINT  //
+
+// LOOPS FOR EACH DAY OF WEEK
+for(index=0; index < DAYS_OF_WEEK; index++)
+{
+
+// BOLD TODAY'S DAY OF WEEK
+if(weekday == index)
+cal += TD_start + '<B>' + day_of_week[index] + '</B>' + TD_end;
+
+// PRINTS DAY
+else
+cal += TD_start + day_of_week[index] + TD_end;
+}
+
+cal += TD_end + TR_end;
+cal += TR_start;
+
+// FILL IN BLANK GAPS UNTIL TODAY'S DAY
+for(index=0; index < Calendar.getDay(); index++)
+cal += TD_start + '  ' + TD_end;
+
+// LOOPS FOR EACH DAY IN CALENDAR
+for(index=0; index < DAYS_OF_MONTH; index++)
+{
+if( Calendar.getDate() > index )
+{
+  // RETURNS THE NEXT DAY TO PRINT
+  week_day =Calendar.getDay();
+
+  // START NEW ROW FOR FIRST DAY OF WEEK
+  if(week_day == 0)
+  cal += TR_start;
+
+  if(week_day != DAYS_OF_WEEK)
+  {
+
+  // SET VARIABLE INSIDE LOOP FOR INCREMENTING PURPOSES
+  var day  = Calendar.getDate();
+
+  // HIGHLIGHT TODAY'S DATE
+  if( today==Calendar.getDate() )
+  cal += highlight_start + day + highlight_end + TD_end;
+
+  // PRINTS DAY
+  else
+  cal += TD_start + day + TD_end;
+  }
+
+  // END ROW FOR LAST DAY OF WEEK
+  if(week_day == DAYS_OF_WEEK)
+  cal += TR_end;
+  }
+
+  // INCREMENTS UNTIL END OF THE MONTH
+  Calendar.setDate(Calendar.getDate()+1);
+
+}// end for loop
+
+cal += '</TD></TR></TABLE></TABLE>';
+
+//  PRINT CALENDAR
+document.write(cal);
+
+//  End -->
+</script>
+</li>
+            
+          </ul>
+        </div>
+          <p>Description<br/>
+          <textarea name="description" form="create" id="description" placeholder="Enter Description..."></textarea></p>
+          <p>Image<br>
+         <div class="image-upload">
+         
+         <label for="file-input">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+        <img src="images/placeholder.png"/>
+         </label>
+         <input id="file-input" type="file"/>
+  </div></p>
+     <p><input id="location-add" style="font-size:12px;color:#000066;font-family:verdana;" type="button" name="B1" value="+ Add Location" onClick="popup('','location','640','480','center','front');"></p>
+
+       
+        <button type="submit" class="btn btn-default btn-lg create-btn">Create Special</button>
+      </form>
+     
+  	  
+  	</div><!-- End of the First Column -->
+  	      
+    <div class="col-md-4 second"><!-- Start of the Second Column -->
+             
+    </div><!-- End of the Second Column -->
+    <div class="col-md-4 third"><!-- Start of the Third Column -->
+            
+    </div><!-- End of the Third Column -->
+          
+      </div><!-- End of the First Row -->
+
+     
+    </div><!-- End of the Container -->
+   
+   </div> <!-- End of the Main -->
+   <!-- Start of the Footer -->
+   <footer class="footer">
+   	<div class="container">
+
+   	 <div class="row top">
+   	 	<div class="col-md-4">
+   	 		<ul class="footer-menu">
+   	 			<li><a href="#">About Front Apron</a></li>
+   	 			<li><a href="#">Businesses</a></li>
+   	 			<li><a href="#">Terms & Privacy</a></li>
+   	 			<li><a href="#">Blog</a></li>
+   	 			<li><a href="#">Help</a></li>
+   	 		</ul>
+   	 	</div><!-- End of the Footer First Column -->
+   	 	<div class="col-md-4">
+   	 	</div><!-- End of the Footer Second Column -->
+   	 	<div class="col-md-4">
+   	 	 <div class="footer-icons">
+   	 	  <a class="google-play"href="#"><img src="images/google-play.png"></a>
+   	 	  <a class="appstore"href="#"><img src="images/appstore.png"></a>
+   	 	 </div>
+   	 	 <div class="footer-socials">
+   	 	 	<a class="fbook"><img src="images/facebook.png"></a>
+   	 	 	<a class="twitter"><img src="images/twitter.png"></a>
+   	 	 	<a class="gplus"><img src="images/googleplus.png"></a>
+   	 	 </div>
+   	 	</div><!-- End of the Footer Third Column -->
+   	 </div><!-- End of the Footer Row Top -->
+   	 <div class="row bottom">
+   	 	<p class="copy-right">© 2014, Front Apron.  All Rights Reserved.</p>
+   	 </div>
+   	</div><!-- End of the Footer Container -->
+   </footer>
+   <!-- End of the Footer -->
+
+ <script src="js/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ </body>
+ </html>
