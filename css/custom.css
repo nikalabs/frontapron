@@ -405,4 +405,36 @@ color:#ffffff;
 border:0px;
 }
 td.button{text-align:right;}
-#account-table{border-bottom:3px solid #d9d9d9;;}
+#account-table{border-bottom:3px solid #d9d9d9;}
+
+
+
+/* Pending Specials */
+.thumbnail .image-container .choose{
+	position: absolute;
+left: 0;
+z-index: 1000000;
+}
+.btn-choose{
+	width: 36px;
+height: 36px;
+border-radius: 0px;
+background-color: #ffffff;
+border: 0px;
+text-align:center;
+}
+.btn-choose .glyphicon-ok{
+	font-size: 20px;
+color: #7ab317;
+position: absolute;
+top: 7px;
+left: 7px;
+}
+.thumbnail .image-container .cancel{margin-left:38px;}
+.btn-choose .glyphicon-remove{
+	font-size: 20px;
+color: #c30909;
+position: absolute;
+top: 7px;
+left: 8px;
+}
