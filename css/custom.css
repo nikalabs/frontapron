@@ -251,3 +251,17 @@ margin-top:20px;
 	left:0;
 	right:0;
 }
+
+
+
+
+/* Market Intel */
+#market-table{border-bottom: 3px solid #d9d9d9;}
+#market-table .table-header{width:100%; background-color:#32328f; color:#ffffff; font-weight:normal; font-family:'Lato', sans-serif; height:48px;}
+#market-table .table-header .location{padding-top:12px;}
+#market-table .table-header .follower-count{text-align:right; padding-top:12px;}
+#market-table  .day-badge{background-image:url(../images/day-badge.png);text-align:right; height:48px; background-position: right center; padding-top:12px; color:#ffffff; background-repeat:no-repeat;}
+#market-table .viewer{padding-top:15px; color:#636466; font-family:'Lato', sans-serif;}
+#market-table .viewer .glyphicon-eye-open{color:#77787b; padding-right:5px;}
+#market-table .name{color:#636466; font-family:'Lato', sans-serif; padding-top:15px;}
+#market-table .day-badge-off{background-image:url(../images/day-badge-off.png); text-align:center; height:48px; background-position: right center; color:#ffffff; background-repeat:no-repeat; padding-left:20px;}
