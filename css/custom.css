@@ -469,3 +469,38 @@ width: 80px;
 #search-table .details .glyphicon-time{font-size:15px; color:#85878a;}
 #search-table .details p{color:#85878a; font-size:14px;}
 #search-table >tbody>tr>td{border-top:0px; border-bottom:1px solid #7ab317; padding-top:20px;}
+
+
+
+
+
+/* Upgrade Account */
+#price-table .last-cell{text-align:right; font-weight:500; font-family:'Lato', sans-serif;}
+#price-table>tbody>tr>th{border-top:0px;}
+#coupon{width:50%;}
+#ccnumber{width:65%;}
+.account-form .payment .credit{width:93px; background:transparent; border:1px solid #32328f; color:#606163; font-size:12px;}
+.account-form .payment .paypal{background-color:transparent; background-image:url(../images/paypal.png); background-repeat:no-repeat; background-position:left center; color:transparent; margin-left:30px;}
+.account-form .exp-date{width:40%; float:left;}
+.account-form .exp-date #month{
+width: 66px;
+float: left;
+text-align: center;
+margin-right:10px;
+}
+.account-form .exp-date #year{
+width: 66px;
+float: left;
+text-align: center;
+}
+.account-form .cvv{width:58%; float:right; }
+.account-form .cvv #CVV{width:66px;}
+.account-form .coupon{margin-bottom:10px;}
+.account-form .card-name{margin-bottom:10px;}
+.account-form .businessname{margin-bottom:10px;}
+.account-form .payment{margin-bottom:10px;}
+.account-form .ccnumber{margin-bottom:10px;}
+.account-form .cc-details{width:100%; float:left; margin-bottom:10px;}
+.account-form #ein{margin-bottom:10px;}
+.btn.upgrade-account{width:65%;}
+#price-table{margin-bottom:10px;}
