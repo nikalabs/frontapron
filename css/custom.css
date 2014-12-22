@@ -498,9 +498,15 @@ text-align: center;
 .account-form .coupon{margin-bottom:10px;}
 .account-form .card-name{margin-bottom:10px;}
 .account-form .businessname{margin-bottom:10px;}
-.account-form .payment{margin-bottom:10px;}
+.account-form .payment{margin-bottom:10px; position:relative;}
 .account-form .ccnumber{margin-bottom:10px;}
-.account-form .cc-details{width:100%; float:left; margin-bottom:10px;}
+.account-form .cc-details{width:100%; float:left; margin-bottom:10px; margin-left:20px;}
 .account-form #ein{margin-bottom:10px;}
 .btn.upgrade-account{width:65%;}
 #price-table{margin-bottom:10px;}
+#package* {background-color:transparent; border:0px; color:#000000;}
+.package{margin-bottom:10px;}
+.package-select option{height:34px;}
+.pack{background:#ffffff; color:#414042;}
+.payment .dropdown-menu{width:100%; border:0px; }
+.account-form .payment .credit span.caret{color:transparent;}
