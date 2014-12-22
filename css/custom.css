@@ -510,3 +510,67 @@ text-align: center;
 .pack{background:#ffffff; color:#414042;}
 .payment .dropdown-menu{width:100%; border:0px; }
 .account-form .payment .credit span.caret{color:transparent;}
+
+
+
+
+/* Friends */
+#friend-search{width:270px; background-color:#628f12; color:#ffffff; background-image:url(../images/search-small.png); background-position: 10px 10px; background-repeat: no-repeat; padding-left: 30px; border:0px;}
+.frinds-search input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ffffff;
+}
+.frinds-search input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ffffff;
+}
+.frinds-search input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ffffff;
+}
+.frinds-search input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ffffff;
+}
+.frinds-search{background-color:#628f12; border-radius:4px;}
+.close{opacity:1;}
+button.close{padding:3px 4px;}
+.friend-search-wrapper{padding:5px; background:#7ab317;}
+.result-found p{font-size:16px; color:#939598; font-family:'Lato', sans-serif; font-weight:400; margin-bottom:30px; padding-left:20px;}
+.f-form{margin-top:0px;}
+.round {
+                border-radius: 50%;
+                overflow: hidden;
+                width: 100px;
+                height: 100px;
+            }
+            .round img {
+                display: block;
+            /* Stretch 
+                  height: 100%;
+                  width: 100%; */
+            min-width: 100%;
+            min-height: 100%;
+            }
+
+.friend{margin-right:45px; position:relative;}
+.btn.addedfriend{
+z-index: 1000000000;
+position: absolute;
+width: 27px;
+height: 27px;
+background: #ffffff;
+bottom: 0px;
+right: -15px;
+border-radius:50%;
+padding:0px;
+}
+.btn.addedfriend .glyphicon-ok {color:#78b212; font-size:16px; padding-top:1px;}
+.btn.addfriend{
+z-index: 1000000000;
+position: absolute;
+width: 27px;
+height: 27px;
+background: #78b212;
+bottom: 0px;
+right: -15px;
+border-radius:50%;
+padding:0px;
+}
+.btn.addfriend .glyphicon-plus{color:#ffffff; font-size:15px; padding-left: 1px; padding-top: 2px;}
