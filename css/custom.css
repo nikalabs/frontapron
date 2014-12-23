@@ -588,3 +588,8 @@ padding:0px;
 .user-drop-down li> a{color:#ffffff;}
 .user-drop-down li .icon{width: 22px; float: left; margin-right:5px; margin-left:-10px;}
 .user-drop-down>li>a:hover, .user-drop-down>li>a:focus{background:transparent; color:#ffffff;}
+
+
+
+/* Biz Header */
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{background-color:transparent;}
