@@ -9,17 +9,17 @@
       </div>
       <form class="create-form " role="sign-in" action="mailto:youremail@email.com" method="post">
         <div class="form-group">
-          <div>Product Name<br/>
-          <input type="text" class="form-control product" placeholder="Enter Product Name..." name="product"></div>
-           <div>Special Offer<br/>
-          <input type="text" class="form-control offer" placeholder="Enter Offer..." name="offer"></div>
-           <div class="price">Price<br/>
-          <input type="number" class="form-control" placeholder="$5" name="price" id="price" min="1"></div>
-          <div class="quantity">Qty<br/>
-          <input type="number" class="form-control" placeholder="1" name="quantity" id="quantity" step="1" min="1"></div>
+          <p>Product Name<br/>
+          <input type="text" class="form-control product" placeholder="Enter Product Name..." name="product_name"></p>
+           <p>Special Offer<br/>
+          <input type="text" class="form-control offer" placeholder="Enter Offer..." name="special_offer"></p>
+           <p class="price">Price<br/>
+          <input type="number" class="form-control" placeholder="$5" name="price" id="price" min="1"></p>
+          <p class="quantity">Qty<br/>
+          <input type="number" class="form-control" placeholder="1" name="quantity" id="quantity" step="1" min="1"></p>
           <div class="starts">
-          <div>Starts<br/>
-           <input type="date" name="bday" class="form-control start" placeholder="Dec 12,, 2014" name="start-date" id="start-date"></div><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a>
+          <p>Starts<br/>
+           <input type="date" name="bday" class="form-control start" placeholder="Dec 12,, 2014" name="start_at" id="start-date"></p><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a>
             <ul class="dropdown-menu date" role="menu">
             <li><script language="javascript" type="text/javascript">
 var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
@@ -133,8 +133,8 @@ document.write(cal);
           </ul>
         </div>
                    <div class="expires">
-                    <div>Expires<br/>
-           <input type="date" name="bday" class="form-control expire" placeholder="Dec 12,, 2014" name="expire-date" id="expire-date"></div><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a>
+                    <p>Expires<br/>
+           <input type="date" name="bday" class="form-control expire" placeholder="Dec 12,, 2014" name="end_at" id="expire-date"></p><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></a>
             <ul class="dropdown-menu date" role="menu">
             <li><script language="javascript" type="text/javascript">
 var day_of_week = new Array('Sun','Mon','Tue','Wed','Thu','Fri','Sat');
@@ -247,9 +247,9 @@ document.write(cal);
             
           </ul>
         </div>
-          <div>Description<br/>
-          <textarea name="description" form="create" id="description" placeholder="Enter Description..."></textarea></div>
-          <div>Image<br>
+          <p>Description<br/>
+          <textarea name="description" form="create" id="description" placeholder="Enter Description..."></textarea></p>
+          <p>Image<br>
          <div class="image-upload">
          
          <label for="file-input">
@@ -257,8 +257,8 @@ document.write(cal);
         <img src="images/placeholder.png"/>
          </label>
          <input id="file-input" type="file"/>
-  </div></div>
-     <div><input id="location-add" style="font-size:12px;color:#000066;font-family:verdana;" type="button" name="B1" value="+ Add Location" onClick="popup('','location','640','480','center','front');"></div>
+  </div></p>
+     <p><input id="location-add" style="font-size:12px;color:#000066;font-family:verdana;" type="button" name="B1" value="+ Add Location" onClick="popup('','location','640','480','center','front');"></p>
 
        
         <button type="submit" class="btn btn-default btn-lg create-btn">Create Special</button>
@@ -280,3 +280,4 @@ document.write(cal);
     </div><!-- End of the Container -->
    
    </div> <!-- End of the Main -->
+   
