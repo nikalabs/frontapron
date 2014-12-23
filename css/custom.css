@@ -574,3 +574,17 @@ border-radius:50%;
 padding:0px;
 }
 .btn.addfriend .glyphicon-plus{color:#ffffff; font-size:15px; padding-left: 1px; padding-top: 2px;}
+
+
+
+/* Signed In Header */
+.btn.signed-in{width:66px; height:45px; background:#1e1e56; border:0px;}
+.btn.signed-in .caret{float:right; color:#ffffff; margin-top:15px;}
+.user-thumb{float:left;}
+.user-drop-down{z-index:100000000; width:200px;}
+.user-log{margin-top:17px;}
+.user-log .dropdown-toggle:active, .user-log.open .dropdown-toggle{background-color:#1e1e56;}
+.user-drop-down{background-color:#1e1e56; color:#ffffff;}
+.user-drop-down li> a{color:#ffffff;}
+.user-drop-down li .icon{width: 22px; float: left; margin-right:5px; margin-left:-10px;}
+.user-drop-down>li>a:hover, .user-drop-down>li>a:focus{background:transparent; color:#ffffff;}
