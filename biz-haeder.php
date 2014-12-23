@@ -16,8 +16,8 @@
      <div class="btn-group user-log navbar-right" role="group"><button type="button" class="btn btn-default dropdown-toggle signed-in" id="signed-in-menu" data-toggle="dropdown" aria-expanded="true"><img class="user-thumb" src="images/user-thumb.png"><span class="caret"></span></button> <ul class="dropdown-menu user-drop-down" role="menu" aria-labelledby="signed-in-menu">
     <li><a role="menuitem"  href="#"><div class="icon"><img src="images/profile.png"></div>Profile</a></li>
     <li><a role="menuitem"  href="#"><div class="icon"><img src="images/friends.png"></div>Friends</a></li>
-    <li><a role="menuitem"  href="#"><div class="icon"><img src="images/filter.png"></div>Filters</a></li>
-    <li><a role="menuitem"  href="#"><div class="icon"><img src="images/give-back.png"></div>Give Back</a></li>
+    <li><a role="menuitem"  href="#"><div class="icon"><img src="images/account.png"></div>Manage Accounts</a></li>
+    <li><a role="menuitem"  href="#"><div class="icon"><img src="images/payment.png"></div>Payment</a></li>
     <li><a role="menuitem"  href="#"><div class="icon"><img src="images/login.png"></div>Log Out</a></li>
   </ul>
  		 	</div>	
