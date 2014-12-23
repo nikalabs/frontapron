@@ -593,3 +593,14 @@ padding:0px;
 
 /* Biz Header */
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{background-color:transparent;}
+
+
+
+/* Filter */
+#filter-table .table-header{background:#e6e7e8; font-size:16px; vertical-align:middle;}
+#filter-table .button{text-align:right; }
+#filter-table>tbody>tr>td{vertical-align: middle;}
+#filter-table>thead>tr>td{vertical-align: middle;}
+#filter-table>tbody>tr>th{vertical-align: middle;}
+#filter-table .forward{padding-right:10px;}
+
