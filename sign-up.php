@@ -10,7 +10,7 @@
       <form class="signin-form " role="sign-in" action="mailto:youremail@email.com" method="post">
         <div class="form-group">
           <div>E-mail or Mobile Number<br/>
-          <input type="text" class="form-control user" placeholder="JohnSmith4382@target.co" name="user"></div>
+          <input type="text" class="form-control user" placeholder="JohnSmith4382@target.co" name="user_name"></div>
           <div>Password<br/>
           <input type="password" class="form-control pass" id="pass" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" name="password" size="8" ></div>
           <span><a href="#">forgot your password?</a></span>
@@ -28,11 +28,11 @@
       <form class="signup-form" role="sign-up" action="mailto:youremail@email.com" method="post">
         <div class="form-group">
           <div class="first-name">First Name<br/>
-          <input type="text" class="form-control firts" placeholder="John" name="first" id="first"></div>
+          <input type="text" class="form-control firts" placeholder="John" name="first_name" id="first"></div>
           <div class="last-name">Last Name<br/>
-          <input type="text" class="form-control last" placeholder="Smith" name="last" id="last"></div>
+          <input type="text" class="form-control last" placeholder="Smith" name="last_name" id="last"></div>
            <div>E-mail or Mobile Number<br/>
-          <input type="text" class="form-control user" placeholder="JohnSmith4382@target.co" name="user"></div>
+          <input type="text" class="form-control user" placeholder="JohnSmith4382@target.co" name="user_name"></div>
           <div class="password">Password<br/>
           <input type="password" class="form-control pass" id="pass" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" name="password" size="8" ></div>
           <div class="again">Again<br/>
