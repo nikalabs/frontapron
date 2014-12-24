@@ -505,7 +505,7 @@ text-align: center;
 .btn.upgrade-account{width:65%;}
 #price-table{margin-bottom:10px;}
 #package* {background-color:transparent; border:0px; color:#000000;}
-.package{margin-bottom:10px;}
+.package{margin-bottom:10px; margin-top:10px;}
 .package-select option{height:34px;}
 .pack{background:#ffffff; color:#414042;}
 .payment .dropdown-menu{width:100%; border:0px; }
