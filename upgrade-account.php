@@ -21,7 +21,6 @@
              <select id="package" class="package-select">
             <option value="-1" selected style='display:none;'>1 item for $1.00 per day</option>
             <option class="pack" value="1">1 Item  |  $1.00/day<br/></option>
-            <option class="pack" value="2"><table class="table" id="price-table">100 Postings | $29.99<br/></option>
           </select>
          </div>
 
