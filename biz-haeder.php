@@ -57,6 +57,116 @@
 
     </div>
    </nav>
+   <!-- Start of Main Body -->
+   <div class="main">
+    <div class="container">
+ <div class="page-header">
+        <h1>Specials<small><a href="#">View all specials &raquo;</a></small></h1>
+      </div>
+      
+      <div class="row"><!-- Start of the First Row -->
+       <div class="col-md-4"><!-- Start of the First Column -->
+         <div class="thumbnail">
+          <div class="image-container">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="images/open-icon.png"></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Edit</a></li>
+            <li><a href="#">Sahre</a></li>
+            <li><a href="#">Remove</a></li>
+          </ul>
+             <img class="no-margin" src="images/thumbnail-1.png" alt="home-thumb">
+         
+
+            </div>
+
+           <div class="caption">
+             <h3>Freshly brewed coffee<img class="company-logo" src="images/company-logo-starbucks.png" alt="star-bucks"></h3>
+                <p>Our coffee masters have distilled their years 
+of tasting knowledge down to three simple 
+questions to help you find a coffee you’re ...</p>
+ 
+              <h5><img src="images/location-pin.png"> San Jose <small>$10</small></h5>
+                               
+           </div>
+
+        </div>
+
+       
+    </div><!-- End of the First Column -->
+            <div class="col-md-4"><!-- Start of the Second Column -->
+               <div class="thumbnail">
+          <div class="image-container">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="images/open-icon.png"></a>
+          <ul class="dropdown-menu" role="menu">
+             <li><a href="#">Edit</a></li>
+            <li><a href="#">Sahre</a></li>
+            <li><a href="#">Remove</a></li>
+          </ul>
+             <img class="no-margin" src="images/thumbnail-1.png" alt="home-thumb">
+         
+
+            </div>
+
+           <div class="caption">
+             <h3>Freshly brewed coffee<img class="company-logo" src="images/company-logo-starbucks.png" alt="star-bucks"></h3>
+                <p>Our coffee masters have distilled their years 
+of tasting knowledge down to three simple 
+questions to help you find a coffee you’re ...</p>
+ 
+              <h5><img src="images/location-pin.png"> San Jose <small>$10</small></h5>
+                               
+           </div>
+
+        </div>
+
+              
+      </div><!-- End of the Second Column -->
+        <div class="col-md-4"><!-- Start of the Third Column -->
+           <div class="thumbnail">
+          <div class="image-container">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><img src="images/open-icon.png"></a>
+          <ul class="dropdown-menu" role="menu">
+             <li><a href="#">Edit</a></li>
+            <li><a href="#">Sahre</a></li>
+            <li><a href="#">Remove</a></li>
+          </ul>
+             <img class="no-margin" src="images/thumbnail-1.png" alt="home-thumb">
+         
+
+            </div>
+
+           <div class="caption">
+             <h3>Freshly brewed coffee<img class="company-logo" src="images/company-logo-starbucks.png" alt="star-bucks"></h3>
+                <p>Our coffee masters have distilled their years 
+of tasting knowledge down to three simple 
+questions to help you find a coffee you’re ...</p>
+ 
+              <h5><img src="images/location-pin.png"> San Jose <small>$10</small></h5>
+                               
+           </div>
+
+        </div>
+
+         
+        </div><!-- End of the Third Column -->
+
+      </div><!-- End of the First Row -->
+
+      
+      <div class="row"><!-- Start of the First Row -->
+       <div class="col-md-4"><!-- Start of the First Column -->
+       
+    </div><!-- End of the First Column -->
+            <div class="col-md-4"><!-- Start of the Second Column -->
+                </div><!-- End of the Second Column -->
+       <div class="col-md-4"><!-- Start of the Third Column -->
+        </div><!-- End of the Third Column -->
+
+      </div><!-- End of the First Row -->
+
+    </div><!-- End of the Container -->
+   
+   </div> <!-- End of the Main -->
   <script src="js/jquery.js"></script>
  <script src="js/bootstrap.min.js"></script>
  </body>
