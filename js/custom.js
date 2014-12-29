@@ -1,5 +1,12 @@
 <script language="JavaScript" type="text/javascript" src="pop-up.js"></script> 
 <script>
+
+        $(document).ready(function () {
+     $('#div2').hide();
+     
+   });
+      </script>
+      <script>
       $(document).ready(function () {
     $('#id_radio1').click(function () {
         $('#div2').hide('fast');

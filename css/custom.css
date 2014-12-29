@@ -733,6 +733,7 @@ font-weight: 400;
 #credit-table >tbody>tr>td{border-top:0px;}
 #credit-table>thead>tr>th{vertical-align:middle;}
 .pay{margin-bottom:20px;}
+.btn.edit-payment{background-color:#7ab317; color:#ffffff; border-radius:4px; text-align:center;}
 
 
 /* Filter Pop Up */
