@@ -299,14 +299,16 @@ box-shadow: 0px 0px 0px;
 /* Update Profile */
 
 .update-form .form-group p{color:#636466; font-family:'Lato', sans-serif; font-size:15px;}
-.update-form .first-name{width:48%; float:left;}
-.update-form .last-name{width:50%; float:right; }
-.update-form .password{width:48%; float:left;}
+.update-form .first-name{width:48%; float:left; margin-bottom:10px;}
+.update-form .last-name{width:50%; float:right; margin-bottom:10px; }
+.update-form .password{width:48%; float:left; }
+.update-form .username{margin-bottom:10px;}
 .update-form .username input{width:48%;}
 .update-form .again{width:50%; float:right;}
 .update-form .form-group span{color:#636466; font-family:'Lato', sans-serif; font-size:13px; font-style:italic;}
 .update-form .form-group input{background-color:#cccccc; box-shadow:0px 0px 0px;}
 .update-form .form-group input{color:#ffffff !important;}
+.update-form .p-image{margin-top:10px;}
 .update-form input::-webkit-input-placeholder { /* WebKit browsers */
     color:    #ffffff;
 }
@@ -438,6 +440,12 @@ position: absolute;
 top: 7px;
 left: 8px;
 }
+.caption p{
+height: 60px;
+line-height: 20px;
+overflow: hidden;
+margin-bottom:20px;
+}
 
 
 
@@ -479,7 +487,7 @@ width: 80px;
 #price-table>tbody>tr>th{border-top:0px;}
 #coupon{width:50%;}
 #ccnumber{width:65%;}
-.account-form .payment .credit{width:93px; background:transparent; border:1px solid #32328f; color:#606163; font-size:12px;}
+
 .account-form .payment .paypal{background-color:transparent; background-image:url(../images/paypal.png); background-repeat:no-repeat; background-position:left center; color:transparent; margin-left:30px;}
 .account-form .exp-date{width:40%; float:left;}
 .account-form .exp-date #month{
@@ -500,7 +508,7 @@ text-align: center;
 .account-form .businessname{margin-bottom:10px;}
 .account-form .payment{margin-bottom:10px; position:relative;}
 .account-form .ccnumber{margin-bottom:10px;}
-.account-form .cc-details{width:100%; float:left; margin-bottom:10px; margin-left:20px;}
+.account-form .cc-details{width:100%; float:left; margin-bottom:10px; }
 .account-form #ein{margin-bottom:10px;}
 .btn.upgrade-account{width:65%;}
 #price-table{margin-bottom:10px;}
@@ -510,7 +518,30 @@ text-align: center;
 .pack{background:#ffffff; color:#414042;}
 .payment .dropdown-menu{width:100%; border:0px; }
 .account-form .payment .credit span.caret{color:transparent;}
- 
+.account-form .payment .card-name{m width:300px;}
+ .ccard{width:40%; float:left;}
+.ppal .dropdown-menu{padding:20px; margin-top:10px;}
+.ppal input{text-shadow:0px 0p x0px; border-radius:4px; width:100%; border:0px; height:35px; padding-left:10px;}
+.ppal button{border:0px;}
+.ppal button .caret{color:transparent;}
+.ccard .dropdown-menu{margin-top:10px;}
+.ccard .nav-tabs{border:0px;}
+.ccard #creditcard{margin-top:10px; margin-bottom:20px;}
+.ccard #paypal{margin-top:10px; margin-bottom:20px;}
+#creditcard .cc-details{margin-bottom:20px;}
+#paypal input{
+	width: 100%;
+height: 35px;
+border: 0px;
+border-radius: 4px;
+padding-left: 20px;
+margin-bottom: 20px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover{border:0px;}
+.nav-tabs>li>a:hover{border:0px;}
+.nav-tabs>li.active>a{border:0px;}
+.nav-tabs>li.active>a:focus{border:0px;}
+.ccard .credit{border:1px solid #32328f; color:#606163; font-size:12px; border-radius:4px;}
 
 
 /* Friends */
@@ -548,7 +579,7 @@ button.close{padding:3px 4px;}
             min-height: 100%;
             }
 
-.friend{margin-right:45px; position:relative;}
+.friend{margin-right:45px; }
 .btn.addedfriend{
 z-index: 1000000000;
 position: absolute;
@@ -556,7 +587,7 @@ width: 27px;
 height: 27px;
 background: #ffffff;
 bottom: 0px;
-right: -15px;
+right: -25px;
 border-radius:50%;
 padding:0px;
 }
@@ -568,12 +599,19 @@ width: 27px;
 height: 27px;
 background: #78b212;
 bottom: 0px;
-right: -15px;
+right: -25px;
 border-radius:50%;
 padding:0px;
 }
 .btn.addfriend .glyphicon-plus{color:#ffffff; font-size:15px; padding-left: 1px; padding-top: 2px;}
-
+.friend .wrapper{width:100%; height:100px; position:relative;}
+.triends-name{
+width: 100%;
+font-size: 12px;
+text-align: center;
+margin-left: 15px;
+margin-top: 10px;
+}
 
 
 /* Signed In Header */
@@ -602,4 +640,96 @@ padding:0px;
 #filter-table>thead>tr>td{vertical-align: middle;}
 #filter-table>tbody>tr>th{vertical-align: middle;}
 #filter-table .forward{padding-right:10px;}
+
+
+/* pop up */
+.popup .glyphicon-map-marker{color:#ffffff; font-size:18px;}
+.intro{font-size:18px; padding-top:20px; padding-bottom:10px; font-family:'Lato', sans-serif; }
+#popup-table>tbody>tr>td{border-top:0px; border-bottom:1px solid #ddd;;}
+#popup-table .submit{
+background: #afd46b;
+color: #ffffff;
+border: 0px;
+border-radius: 4px;
+height: 35px;
+width: 100%;
+margin-bottom: 40px;
+margin-top:20px;
+}
+
+
+
+/* Activation Page */
+.activation-form .form-group {color:#636466; font-family:'Lato', sans-serif; font-size:15px;}
+
+.activation-form .form-group input{background-color:#cccccc; box-shadow:0px 0px 0px;}
+.activation-form .form-group input{color:#ffffff !important;}
+.activation-form input::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ffffff;
+}
+.activation-form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #ffffff;
+}
+.activation-form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #ffffff;
+}
+.activation-form input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #ffffff;
+}
+.btn.activation{
+background: #afd46b;
+color: #ffffff;
+border: 0px;
+border-radius: 4px;
+height: 35px;
+width: 40%;
+margin-bottom: 40px;
+margin-top:20px;
+}
+
+
+/* Sign-In-2 */
+.head-signin-form {width:35%; float:right;}
+.head-signin-form .phone{width:150px; float: left;}
+.head-signin-form .pass{width:150px; float:left; margin-left:15px;}
+.head-signin-form .pass input{margin-left:-1px;}
+.head-signin-form .pass span{margin-left:10px;}
+.head-signin-form span{font-size:11px;}
+.head-signin-form .log{float:right; }
+.head-signin-form .form-group input.pass{background-image:none;}
+.head-signin-form .form-group{font-size:11px; color:#ffffff; padding-top:15px;}
+.fb-log {width:50%; text-align:center;}
+.fb-log img{padding-left: 30px; padding-top: 10px;}
+
+
+
+
+/* Payment Page */
+.payment-info{
+font-weight: bold;
+color: #9E9A9A;
+font-size: 16px;
+}
+.payment-info span{
+	color: #564F4F;
+font-weight: 400;
+}
+#credit-table >tbody>tr>td{border-top:0px;}
+#credit-table>thead>tr>th{vertical-align:middle;}
+.pay{margin-bottom:20px;}
+
+
+/* Filter Pop Up */
+#search-popup-form input{width:100%; border:0px; border-radius:4px; height:35px; padding-left:10px;}
+select#category{height:35px; width:100%; border:0px;}
+#category option{height:35px;}
+select.radius{height:35px; border:0px; width:55%;}
+.adding{width:100%; background-color:#32328f; color:#ffffff;}
+.removing{width:50%; background-color:#afd46b; color:#ffffff;}
+#search-popup-form .wrapper input{width:92%; float:left;}
+#search-popup-form  .wrapper.string{background-color:#ffffff; border-radius:4px;}
+#search-popup-form .wrapper .glyphicon-remove-circle{padding-top:10px; padding-bottom:10px;}
+
+
+
 
