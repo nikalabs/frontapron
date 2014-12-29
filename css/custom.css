@@ -544,6 +544,22 @@ margin-bottom: 20px;
 .ccard .credit{border:1px solid #32328f; color:#606163; font-size:12px; border-radius:4px;}
 
 
+.ccselector label > input{ /* HIDE RADIO */
+  display:none;
+}
+.ccselector label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+}
+.ccselector label > input:checked + img{ /* (CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+.payment .store-address{margin-top: 10px; margin-bottom:10px;}
+.payment .store-city{width:30%; float:left; margin-right: 18px; margin-bottom: 10px;}
+.payment .store-zip{width:30%; float:left; margin-right:18px; margin-bottom: 10px;}
+.payment .store-sate{width:30%; float:left; margin-bottom: 10px;}
+
+
 /* Friends */
 #friend-search{width:270px; background-color:#628f12; color:#ffffff; background-image:url(../images/search-small.png); background-position: 10px 10px; background-repeat: no-repeat; padding-left: 30px; border:0px;}
 .frinds-search input::-webkit-input-placeholder { /* WebKit browsers */
