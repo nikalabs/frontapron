@@ -824,7 +824,83 @@ font-family: OpenSans,'Helvetica Neue',Helvetica,Arial,FreeSans,sans-serif;
 .navbar-form.search .btn.search img{padding-top:12px;}
 
 
+
+
+/** Validate **/
+
 .error{display:block !important;}
-#firstinfo.error{width:100%; height:20px; color:red;}
-#userinfo.error{width:100%; height:20px; color:red;}
-#eininfo.error{width:100%; height:20px; color:red;}
+#firstinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#lastinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#userinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#eininfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#cardinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#ppalinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#passinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#addressinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#cityinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#zipinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#stateinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#creditinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#monthinfo.error{width:76px; height:20px; color:red; font-size:10px; float:left;}
+#monthinfo{width:66px; float:left;}
+#yearinfo{width:66px;}
+#yearinfo.error{width:66px; height:20px; color:red; font-size:10px; float:left;}
+#upgradeaccountinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#cvvinfo.error{ height:20px; color:red; font-size:10px;}
+.CVV-no{width:66px;}
+#firstnameinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#lastnameinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#storeaddressinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#storecityinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#zipcodeinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+#storestateinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+
+
+
+#confirmation-table .btn{
+width: 100%;
+text-align: center;
+
+border-radius:4px;
+background-color: #7ab317;
+color: #ffffff;
+border: 0px;
+font-size:16px;
+}
+
+#confirmation-table .title{
+
+
+padding-top: 30px;
+text-align:left;
+
+}
+#confirmation-table .photo{
+
+float: left;
+}
+
+#confirmation-table .title .user-email{padding-left:20px;}
+
+#confirmation-table .title .user-title{
+width:100%;
+font-family: 'Helvetica Neue',Helvetica,'Lucida Grande',tahoma,verdana,arial,sans-serif;
+font-weight: bold;
+font-size: 18px;
+color: rgb(51,51,51);
+display: block;
+margin-top: 3px;
+padding-left:20px;
+}
+
+#confirmation-table{background-color: #ffffff; width:360px; height:298px;}
+.confirmation .page-header{text-align:center;}
+#confirmation-table>tbody>tr>td{border-top:0px;}
+#confirmation-table>tbody>tr>th{border-top:0px;}
+#confirmation-table tbody{border-bottom:1px solid #ddd;}
+.confirmation{background-color:rgb(245, 246, 247);}
+#confirmation-table .header{background-color:rgb(245, 246, 247);}
+#confirmation-table .header{border:0px !important;}
+#confirmation-table tr{border-left:1px solid #ddd; border-right:1px solid #ddd;}
+#confirmation-table .header >th{border-bottom:1px solid #ddd;;}
+
