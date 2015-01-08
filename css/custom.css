@@ -38,8 +38,9 @@ header .container .navbar-btn{float:right; margin-top:20px;}
 .head-signin-form button{padding:0px 6px;}
 .navbar.home .container .navbar-form{text-align:left; width:100%;}
 .navbar.home .container .navbar-form .form-group{margin-left:-30px;}
-.head-signin-form #log{width:55px; padding:0px 6px; font-size:12px; margin-top:5px; background-color:#8FC03B; color:#ffffff; border-radius:1px;}
-.head-signin-form .log{font-size:12px; width:55px; padding:2.5px 6px; background-color:#8FC03B; color:#ffffff; border-radius:1px; border:0px;}
+.head-signin-form #log{width:88px; padding:6px 12px; font-size:12px; margin-top:10px; background-color:#73A221; color:#ffffff; border-radius:1px; margin-bottom:8px; background-image: linear-gradient(#96CC39 4%, #73A221 5%, #669418); border-radius:3px;}
+.head-signin-form .log{font-size:12px; width:88px; padding:0px 8px; background-color:transparent; color:#ffffff; border-radius:1px; border:0px;}
+.head-signin-form .log:hover{padding:3px 8px; background-color:#73A221; border-radius:3px; color:#ffffff;}
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color:#32328f;}
 .navbar-default .navbar-nav>li>a.active{color:#32328f; border-bottom:3px solid #32328f;}
 
@@ -688,9 +689,15 @@ margin-top: 10px;
 .user-drop-down li> a{color:#ffffff;}
 .user-drop-down li .icon{width: 22px; float: left; margin-right:5px; margin-left:-10px;}
 .user-drop-down>li>a:hover, .user-drop-down>li>a:focus{background:transparent; color:#ffffff;}
+.user-title{
+float: right;
+width: 30px;
+margin-top: 10px;
+color: #ffffff;
 
+}
 
-
+.user-log{width:100px;}
 /* Biz Header */
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{background-color:transparent;}
 
@@ -812,10 +819,12 @@ font-family: OpenSans,'Helvetica Neue',Helvetica,Arial,FreeSans,sans-serif;
 /** Index 2 **/
 .navbar-form.search {float:left !important; }
 .navbar-form.search .form-group{margin-left:20px; margin-top:12px;}
-.head-signin-form.home{width:55px; float:right; padding-top:10px;}
+.head-signin-form.home{width:88px; float:right; padding-top:0px;}
 .navbar-form.search .form-group input{width:300px; height:30px;}
 .navbar-form.search .btn.search img{padding-top:12px;}
-.head-signin-form.home .btn:hover{background:#ffffff; color:#32328f;}
-.head-signin-form.home #log:hover{background:#ffffff; color:#32328f;}
 
 
+.error{display:block !important;}
+#firstinfo.error{width:100%; height:20px; color:red;}
+#userinfo.error{width:100%; height:20px; color:red;}
+#eininfo.error{width:100%; height:20px; color:red;}
