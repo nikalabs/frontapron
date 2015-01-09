@@ -585,8 +585,9 @@ function validateZip_code(){
 
 
 $('#submit').click(function() {
-  var selected = $("#upgradeaccount option:selected").val();
-if (selected =='1' || $("#id_radio1").is(':checked')){
+  
+ 
+if ($("#card-name").val().length>0){
      
 var name = $("#card-name");
 var credit_number = $("#ccnumber");
@@ -608,6 +609,8 @@ if (validateName() , validateCredit() , validateMonth() , validateYear() ,  vali
 
 
 function validateName(){
+
+
   if (name.val().length<2){
   name.addClass("error");
   $("#cardinfo").addClass("error");
