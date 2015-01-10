@@ -302,7 +302,13 @@
       </script>
 
 
- <script>
+
+
+
+
+      
+
+<script>
 $(document).ready(function() {
 
   $('#submit').click(function() {
@@ -428,7 +434,18 @@ function validateState(){
 }
 }
 
+  } else {
+
+
+ $("#addressinfo").removeClass("error");
+$("#cityinfo").removeClass("error");
+ $("#zipinfo").removeClass("error");
+ $("#stateinfo").removeClass("error");
+
+
   }
+
+
   });
 
   $('#submit').click(function() {
@@ -580,51 +597,37 @@ function validateZip_code(){
 }
 }
      
+
+
  }
   });
 
 
 $('#submit').click(function() {
-  
  
-if ($("#card-name").val().length>0){
+
+if ($("#card-name").val().length>2){
      
-var name = $("#card-name");
+
 var credit_number = $("#ccnumber");
 var expiration_date = $("#month");
 var expiration_year = $("#year");
 var cvv = $("#cvv");
 
-name.blur(validateName);
+
 credit_number.blur(validateCredit);
 expiration_date.blur(validateMonth);
 expiration_year.blur(validateYear);
 cvv.blur(validateCvv);
 
-if (validateName() , validateCredit() , validateMonth() , validateYear() ,  validateCvv()){
+if (validateCredit() , validateMonth() , validateYear() ,  validateCvv()){
     return true;
   }else{
     return false;
   }
 
 
-function validateName(){
 
-
-  if (name.val().length<2){
-  name.addClass("error");
-  $("#cardinfo").addClass("error");
-  
-   return false;
-
-}else{
-  name.removeClass("error");
-  $("#cardinfo").removeClass("error");
- 
-
-  return true;
-}
-}
 
 function validateCredit(){
   if (credit_number.val().length<5 || credit_number.val().length>13){
@@ -692,7 +695,17 @@ function validateCvv(){
 }
 
 
+} else {
+
+
+
+  $("#creditinfo").removeClass("error"); 
+ $("#monthinfo").removeClass("error");
+$("#yearinfo").removeClass("error");
+ $("#cvvinfo").removeClass("error");
+
 }
+
 });
 
 
