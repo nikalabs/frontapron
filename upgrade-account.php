@@ -1,28 +1,28 @@
 <!doctype html>
  <html>
  <head>
-      	 <meta charset="utf-8">
-      	 <meta name="viewport" content="width=device-weidth, initial-scale=1.0">
-      	 <title>Front Apron</title>
-      	 <link href="css/bootstrap.min.css" rel="stylesheet">
-      	 <link href="css/custom.css" rel="stylesheet">
-      	 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-weidth, initial-scale=1.0">
+         <title>Front Apron</title>
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+         <link href="css/custom.css" rel="stylesheet">
+         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
         
  </head>
  <body>
-   
+  
 <!-- Start of Main Body -->
    <div class="main">
-   	<div class="container">
+    <div class="container">
  <div class="row"><!-- Start of the Row -->
  
-  	      
+          
 <div class="col-md-4"><!-- Start of the Column -->
       <div class="page-header">
         <h1>Upgrade Account</h1>
       </div>
       <p><em>Free postings for first 3 months - Payment method is required when doing postings after the promotion period</em></p>
-      <form class="account-form" role="sign-up" action="mailto:youremail@email.com" method="post" id="form">
+      <form class="account-form" role="sign-up" action="https://www.google.com/" method="post" id="form">
         <div class="form-group">
           <select name="typeofaccount" size="1" id="upgradeaccount"  type="select">
              <option value="-1" selected>Account Type</option>
@@ -149,14 +149,13 @@
         </div><!--End Of Payment Div -->
           
        
-          <div id="2" class="type ein" >
+         <div id="2" class="type ein" >
             <div class="ein-number">EIN #(for schools & Charities if applicable)<br/>
           <input type="text" class="form-control ein" placeholder="Enter Ein #..." name="ein_number" id="einnumber"  ><div id="eininfo" style="display:none;"><em>The Number Is Not Valid</em></div></div>
 
-          <div class="first-name">First Name<br/>
-          <input type="text" class="form-control firts" placeholder="John" name="first_name" id="first"  ><div id="firstnameinfo" style="display:none;"><em>The Name Is Not Valid</em></div></div>
-          <div class="last-name">Last Name<br/>
-          <input type="text" class="form-control last" placeholder="Smith" name="last_name" id="last"  ><div id="lastnameinfo" style="display:none;"><em>The Name Is Not Valid</em></div></div>
+          <div class="first-name"><br/>
+          <input type="text" class="form-control firts" placeholder="Business Name" name="first_name" id="first"  ><div id="firstnameinfo" style="display:none;"><em>The Name Is Not Valid</em></div></div>
+         
           
                 <div class="store-address"><input type="text" class="form-control address" placeholder="Address" name="store_address" id="store-address"><div id="storeaddressinfo" style="display:none;"><em>The Address Is Not Valid</em></div></div>
                 <div class="store-city"><input type="text" class="form-control city" placeholder="City" name="store_city" id="store-city"><div id="storecityinfo" style="display:none;"><em>The City Is Not Valid</em></div></div>
@@ -222,6 +221,7 @@
         
       </form>
     
+    
     </div><!-- End of the Column -->
           
       </div><!-- End of the Row -->
@@ -230,7 +230,7 @@
     </div><!-- End of the Container -->
    
    </div> <!-- End of the Main -->
-  
+
 
  <script src="js/jquery.js"></script>
  <script src="js/bootstrap.min.js"></script>
@@ -302,11 +302,6 @@
       </script>
 
 
-
-
-
-
-      
 
 <script>
 $(document).ready(function() {
@@ -454,7 +449,6 @@ $("#cityinfo").removeClass("error");
      
 var ein = $("#einnumber");
 var first_name = $("#first");
-var last_name = $("#last");
 var store_address = $("#store-address");
 var store_city = $("#store-city");
 var zip_code = $("#store-zip");
@@ -463,13 +457,12 @@ var store_state = $("#store-state");
 
 ein.blur(validateEin);
 first_name.blur(validateFirst_name);
-last_name.blur(validateLast_name);
 store_address.blur(validateStore_address);
 store_city.blur(validateStore_city);
 zip_code.blur(validateZip_code);
 store_state.blur(validateStore_state);
 
-if (validateEin() , validateFirst_name() , validateLast_name() , validateStore_address() , validateStore_city() , validateZip_code() , validateStore_state()){
+if (validateEin() , validateFirst_name() , validateStore_address() , validateStore_city() , validateZip_code() , validateStore_state()){
     return true;
   }else{
     return false;
@@ -510,21 +503,6 @@ function validateFirst_name(){
 }
 }
 
-function validateLast_name(){
-  if (last_name.val().length<2){
- last_name.addClass("error");
-  $("#lastnameinfo").addClass("error");
-  
-   return false;
-
-}else{
-  last_name.removeClass("error");
-  $("#lastnameinfo").removeClass("error");
- 
-
-  return true;
-}
-}
 
 
 function validateStore_address(){

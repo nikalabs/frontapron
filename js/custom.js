@@ -93,7 +93,6 @@ $(document).ready(function(){
 });
      
 
-
 $(document).ready(function() {
 
   $('#submit').click(function() {
@@ -239,7 +238,6 @@ $("#cityinfo").removeClass("error");
      
 var ein = $("#einnumber");
 var first_name = $("#first");
-var last_name = $("#last");
 var store_address = $("#store-address");
 var store_city = $("#store-city");
 var zip_code = $("#store-zip");
@@ -248,13 +246,12 @@ var store_state = $("#store-state");
 
 ein.blur(validateEin);
 first_name.blur(validateFirst_name);
-last_name.blur(validateLast_name);
 store_address.blur(validateStore_address);
 store_city.blur(validateStore_city);
 zip_code.blur(validateZip_code);
 store_state.blur(validateStore_state);
 
-if (validateEin() , validateFirst_name() , validateLast_name() , validateStore_address() , validateStore_city() , validateZip_code() , validateStore_state()){
+if (validateEin() , validateFirst_name() , validateStore_address() , validateStore_city() , validateZip_code() , validateStore_state()){
     return true;
   }else{
     return false;
@@ -295,21 +292,6 @@ function validateFirst_name(){
 }
 }
 
-function validateLast_name(){
-  if (last_name.val().length<2){
- last_name.addClass("error");
-  $("#lastnameinfo").addClass("error");
-  
-   return false;
-
-}else{
-  last_name.removeClass("error");
-  $("#lastnameinfo").removeClass("error");
- 
-
-  return true;
-}
-}
 
 
 function validateStore_address(){
@@ -537,5 +519,7 @@ var mail = $('#email').val();
 });
 
       
+      
+ 
     
       
