@@ -133,7 +133,7 @@ background:rgba(38, 38, 48, 0.6);
 }
 
 .first-column .thumbnail .image-container .dropdown-menu li> a> img{width:21px; height:21px; float:left; margin-left:10px;}
-.first-column .thumbnail .image-container .dropdown-menu li> a> span{float:left; width:50px; text-align:right; font-size:14px; color:#7ab317;}
+.first-column .thumbnail .image-container .dropdown-menu li> a> span{float:left; width:70px; text-align:right; font-size:14px; color:#7ab317;}
 .first-column .thumbnail .image-container:hover .dropdown-menu{
 	display:block;
 	}
@@ -147,7 +147,7 @@ background:rgba(38, 38, 48, 0.6);
 
 }
 .thumbnail .image-container .dropdown-menu>li>a{
-	padding:3px 10px;
+	padding:3px 0px;
 }
 
 
@@ -854,7 +854,6 @@ font-family: OpenSans,'Helvetica Neue',Helvetica,Arial,FreeSans,sans-serif;
 #storecityinfo.error{width:100%; height:20px; color:red; font-size:10px;}
 #zipcodeinfo.error{width:100%; height:20px; color:red; font-size:10px;}
 #storestateinfo.error{width:100%; height:20px; color:red; font-size:10px;}
-
 
 
 #confirmation-table .btn{
