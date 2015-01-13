@@ -118,7 +118,7 @@
                  <img src="images/ccard.png">
                  </label>
                 <label>
-                 <input id="id_radio2" type="radio" name="name_radio1" value="value_radio2" />
+                 <input id="id_radio2" type="radio" name="name_radio2" value="value_radio2" />
                  <img src="images/paypal.png">
                 </label>
               </div>
@@ -230,7 +230,7 @@
     </div><!-- End of the Container -->
    
    </div> <!-- End of the Main -->
-
+  
 
  <script src="js/jquery.js"></script>
  <script src="js/bootstrap.min.js"></script>
@@ -303,10 +303,11 @@
 
 
 
+
 <script>
 $(document).ready(function() {
 
-  $('#submit').click(function() {
+$('#submit').click(function() {
     var typeofaccount = $("#upgradeaccount");
     typeofaccount.blur(validateTypeofaccount);
 if (validateTypeofaccount()){
@@ -337,7 +338,8 @@ function validateTypeofaccount(){
 
 
 
-  $('#submit').click(function() {
+
+ $('#submit').click(function() {
 
   if($("#store").is(':checked')){
 
@@ -443,6 +445,8 @@ $("#cityinfo").removeClass("error");
 
   });
 
+
+
   $('#submit').click(function() {
   var selected = $("#upgradeaccount option:selected").val();
    if(selected =='2') {
@@ -521,6 +525,7 @@ function validateStore_address(){
 }
 }
 
+
 function validateStore_city(){
   if (store_city.val().length<2){
  store_city.addClass("error");
@@ -581,24 +586,64 @@ function validateZip_code(){
   });
 
 
+
+
+
 $('#submit').click(function() {
  
-
-if ($("#card-name").val().length>2){
+if ($("#id_radio2").is(':checked')){
      
+var email = $("#email");
+email.blur(validateEmail);
 
+if (validateEmail()){
+    return true;
+  }else{
+    return false;
+  }
+
+
+function validateEmail(){
+
+var mail = $('#email').val();
+  var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+    if (!filter.test(mail)){
+  email.addClass("error");
+  $("#ppalinfo").addClass("error");
+  
+   return false;
+
+}else{
+  email.removeClass("error");
+  $("#ppalinfo").removeClass("error");
+ 
+
+  return true;
+}
+}
+
+
+
+}
+});
+
+
+$('#submit').click(function() {
+if ($("#card-name").val().length>2){
+  
 var credit_number = $("#ccnumber");
 var expiration_date = $("#month");
 var expiration_year = $("#year");
 var cvv = $("#cvv");
 
 
-credit_number.blur(validateCredit);
+credit_number.blur(validateCredit_number);
 expiration_date.blur(validateMonth);
 expiration_year.blur(validateYear);
 cvv.blur(validateCvv);
 
-if (validateCredit() , validateMonth() , validateYear() ,  validateCvv()){
+if (validateCredit_number() , validateMonth() , validateYear() ,  validateCvv()){
     return true;
   }else{
     return false;
@@ -606,8 +651,7 @@ if (validateCredit() , validateMonth() , validateYear() ,  validateCvv()){
 
 
 
-
-function validateCredit(){
+function validateCredit_number(){
   if (credit_number.val().length<5 || credit_number.val().length>13){
   credit_number.addClass("error");
   $("#creditinfo").addClass("error");
@@ -624,7 +668,7 @@ function validateCredit(){
 }
 
 function validateMonth(){
-  if (expiration_date.val() < 1 || expiration_date.val() > 12){
+  if (expiration_date.val() <1 || expiration_date.val()> 12){
   expiration_date.addClass("error");
   $("#monthinfo").addClass("error");
   
@@ -673,66 +717,15 @@ function validateCvv(){
 }
 
 
-} else {
-
-
-
-  $("#creditinfo").removeClass("error"); 
- $("#monthinfo").removeClass("error");
-$("#yearinfo").removeClass("error");
- $("#cvvinfo").removeClass("error");
-
 }
-
-});
-
-
-
-$('#submit').click(function() {
-  var selected = $("#upgradeaccount option:selected").val();
-if (selected =='1' || $("#id_radio2").is(':checked')){
-     
-var email = $("#email");
-email.blur(validateEmail);
-
-if (validateEmail()){
-    return true;
-  }else{
-    return false;
-  }
-
-
-function validateEmail(){
-
-var mail = $('#email').val();
-  var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-
-    if (!filter.test(mail)){
-  email.addClass("error");
-  $("#ppalinfo").addClass("error");
-  
-   return false;
-
-}else{
-  email.removeClass("error");
-  $("#ppalinfo").removeClass("error");
- 
-
-  return true;
-}
-}
-
-
-
-}
-});
 
 });
 
       
-      
-      </script>
-  
+      });
+
+</script>
+
  </body>
  </html>
 
