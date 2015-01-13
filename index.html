@@ -71,7 +71,7 @@
   	   <div class="col-md-3 first-column"><!-- Start of the First Column -->
   	   	<div class="thumbnail">
           <div class="image-container">
-            <div class="after">
+            <div class="after" id="after">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#"><span>SAVE</span> <img src="images/save-icon.png"></a></li>
@@ -98,34 +98,39 @@ questions to help you find a coffee you’re ...</p>
 
   	</div><!-- End of the First Column -->
   	        <div class="col-md-3 first-column"><!-- Start of the Second Column -->
-  	        	<div class="thumbnail">
+  	        	  <div class="thumbnail">
           <div class="image-container">
-              <div class="after">
+            <div class="after" id="after">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#"><span>SAVE</span> <img src="images/save-icon.png"></a></li>
             <li><a href="#"><span>SHARE</span> <img src="images/share-icon.png"></a></li>
             <li><a href="#"><span>TRACK</span> <img src="images/track-icon.png"></a></li>
           </ul>
+          </div>
+             <img class="no-margin" src="images/thumbnail-1.png" alt="home-thumb">
+          
+
             </div>
-            <img class="no-margin" src="images/thumbnail-1.png" alt="home-thumb">
-            </div>
+          
            <div class="caption">
              <h3>Freshly brewed coffee<img class="company-logo" src="images/company-logo-starbucks.png" alt="star-bucks"></h3>
                 <p>Our coffee masters have distilled their years 
 of tasting knowledge down to three simple 
 questions to help you find a coffee you’re ...</p>
-               <a href="#">Read More</a>
-               <h5><img src="images/location-pin.png"> San Jose <small>$10</small></h5>
-  	       </div>
-  	      </div>
+                 <a href="#">Read More</a>
+              <h5><img src="images/location-pin.png"> San Jose <small>$10</small></h5>
+                               
+           </div>
+
+        </div>
   	  </div><!-- End of the Second Column -->
   	    <div class="col-md-3"><!-- Start of the Third Column -->
   	    	  <div class="thumbnail">
           <div class="image-container">
             
              <img class="no-margin" src="images/thumbnail-1.png" alt="home-thumb">
-             <div class="after"><p>1 hour 10 min</p></div>
+             <div class="after" id="after"><p>1 hour 10 min</p></div>
 
             </div>
 
@@ -199,5 +204,57 @@ questions to help you find a coffee you’re ...</p>
 
  <script src="js/jquery.js"></script>
  <script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+<script>
+var rRgba = /^rgba\((\d+),\s*(\d+),\s*(\d+)\,\s*(\d+(\.\d+)?)\)$/,
+rRgb = /^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/
+function getRgbaColorValue(el) {
+    var bg = $.css(el, 'background-color');
+    if (bg.indexOf('rgba') !== -1) {
+        bg = rRgba.exec (bg);
+    } else {
+        bg = rRgb.exec (bg);
+        bg[4] = 1;
+    }
+    return bg;
+};
+
+$.cssNumber.backgroundColorAlpha = true;
+
+$.cssHooks.backgroundColorAlpha = {
+    get: function(el) {
+        var rgba = getRgbaColorValue(el);
+
+        return rgba[4];
+    },
+    set: function(el, value) {
+        var rgba = getRgbaColorValue(el);
+
+        el.style.backgroundColor = 'rgba(' + rgba[1] + ',' + rgba[2] + ',' + rgba[3] + ',' + value + ')';
+    }
+};
+
+$.fx.step.backgroundColorAlpha = function(fx) {
+    $.cssHooks.backgroundColorAlpha.set(fx.elem, fx.now + fx.unit);
+};
+
+
+var $after = $('#after');
+$after.css({
+    'background-color-alpha': 0.9}
+);
+</script>
+
+
+
+
+
  </body>
  </html>
+
+
+   
