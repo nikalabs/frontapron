@@ -47,7 +47,7 @@ header .container .navbar-btn{float:right; margin-top:20px;}
 /* Main - Home */
 
 h1{font-family: 'Lato', sans-serif;
-font-weight:800; 
+font-weight:800;
 color:#32328f;
 font-size:30px;
 font-style:italic;
@@ -79,7 +79,7 @@ h1 small{float:right;}
 .thumbnail .image-container {
     position: relative;
     width: 100%;
-    
+
 }
 .thumbnail .image-container .no-margin{width:100%;}
 .thumbnail .image-container .after {
@@ -103,7 +103,7 @@ h1 small{float:right;}
 	z-index:1000000;
 }
 .thumbnail .image-container .dropdown-menu{
-	
+
 	right:auto;
 	top:25px;
 	left:92%;
@@ -209,7 +209,7 @@ background-position: 95% 7px;
 .shares{margin-top:20px;}
 .shares .stButton .stMainServices {height:24px;}
 h2{font-family: 'Lato', sans-serif;
-font-weight:600; 
+font-weight:600;
 color:#32328f;
 font-size:26px;
 }
@@ -245,7 +245,7 @@ padding-left: 10px;
 }
 h3{
 font-family: 'Lato', sans-serif;
-font-weight:600; 
+font-weight:600;
 color:#32328f;
 font-size:20px;
 }
@@ -391,15 +391,15 @@ margin-right: 10px;
 .account-form .form-group span{color:#636466; font-family:'Lato', sans-serif; font-size:13px; font-style:italic;}
 .account-form .business{}
 .account-form .form-group select{
-	background-color:#cccccc; 
-	box-shadow:0px 0px 0px; 
-	color:#ffffff !important; 
+	background-color:#cccccc;
+	box-shadow:0px 0px 0px;
+	color:#ffffff !important;
 	width: 100%;
 height: 34px;
 padding: 6px 12px;
 font-size: 14px;
 line-height: 1.42857143;
-font-family:'Lato', sans-serif; 
+font-family:'Lato', sans-serif;
 font-size:15px;
 border: 1px solid #ccc;
 border-radius: 4px;
@@ -598,15 +598,15 @@ margin-bottom: 20px;
 }
 .payment .store-address{margin-top: 10px; margin-bottom:10px;}
 .payment .store-city{width:30%; float:left; margin-right: 18px; margin-bottom: 10px;}
-.payment .store-zip{width:30%; float:left; margin-right:18px; margin-bottom: 10px;}
-.payment .store-sate{width:30%; float:left; margin-bottom: 10px;}
+.payment .store-zip{width:30%; float:left;  margin-bottom: 10px;}
+.payment .store-sate{width:30%; float:left; margin-bottom: 10px; margin-right:18px;}
 .account-form .first-name{margin-top:10px; margin-bottom:10px;}
 .account-form .last-name{margin-top:10px; margin-bottom:10px;}
 .account-form .password{margin-top:10px; margin-bottom:20px;}
 .type .store-address{margin-top: 10px; margin-bottom:10px;}
 .type .store-city{width:30%; float:left; margin-right: 18px; margin-bottom: 10px;}
-.type .store-zip{width:30%; float:left; margin-right:18px; margin-bottom: 10px;}
-.type .store-sate{width:30%; float:left; margin-bottom: 10px;}
+.type .store-zip{width:30%; float:left;  margin-bottom: 10px;}
+.type .store-sate{width:30%; float:left; margin-bottom: 10px; margin-right:18px;}
 .account-form  #upgradeaccount{margin-bottom:20px;}
 
 
@@ -638,7 +638,7 @@ button.close{padding:3px 4px;}
             }
             .round img {
                 display: block;
-            /* Stretch 
+            /* Stretch
                   height: 100%;
                   width: 100%; */
             min-width: 100%;
