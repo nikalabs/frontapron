@@ -13,10 +13,10 @@
   
 <!-- Start of Main Body -->
    <div class="main">
-    <div class="container">
+   	<div class="container">
  <div class="row"><!-- Start of the Row -->
- 
-          
+
+
 <div class="col-md-4"><!-- Start of the Column -->
       <div class="page-header">
         <h1>Upgrade Account</h1>
@@ -30,7 +30,7 @@
              <option value="2">Schools & Charities</option>
            </select>
           <div id="upgradeaccountinfo" style="display:none"><em>Please Choose Your Account Type</em></div>
-          
+
            <div id="1" class="type payment">
 
             <div class="package">Package<br/>
@@ -43,19 +43,18 @@
 
            <div class="coupon">Coupon Code<br/>
           <input type="text" class="form-control coupon-code" placeholder="Enter Code..." name="coupon_code" id="coupon"></div>
-          
+
                <div class="businessname">Business Name<br/>
                  <input type="text" class="form-control business-name" placeholder="Target Store 134" name="business_name" id="business-name"></div>
                 <div class="store">
                   <input type="checkbox" name="store" value="store" id="store"> Is a store?<br></div>
 
-         
-          
+
+
                 <div class="store-address"><input type="text" class="form-control address" placeholder="Address" name="address" id="address"><div id="addressinfo" style="display:none;"><em>The Address Is Not Valid!</em></div></div>
                 <div class="store-city"><input type="text" class="form-control city" placeholder="City" name="city" id="city"><div id="cityinfo" style="display:none;"><em>The City Is Not Valid!</em></div></div>
-                <div class="store-zip"><input type="text" class="form-control zip" placeholder="Zip Code" name="zip" id="zip"><div id="zipinfo" style="display:none;"><em>The Zip Is Not Valid!</em></div></div>
                 <div class="store-sate"><select class="form-control state" name="state" id="state">
-  <option value="-1" selected>State</option>              
+  <option value="-1" selected>State</option>
   <option value="AL">Alabama</option>
   <option value="AK">Alaska</option>
   <option value="AZ">Arizona</option>
@@ -107,9 +106,10 @@
   <option value="WV">West Virginia</option>
   <option value="WI">Wisconsin</option>
   <option value="WY">Wyoming</option>
-</select>   <div id="stateinfo" style="display:none;"><em>Please Choose One</em></div>    
+</select>   <div id="stateinfo" style="display:none;"><em>Please Choose One</em></div>
         </div>
-                
+        <div class="store-zip"><input type="text" class="form-control zip" placeholder="Zip Code" name="zip" id="zip"><div id="zipinfo" style="display:none;"><em>The Zip Is Not Valid!</em></div></div>
+        
             Payment Method<br/><!--Start Payment Div -->
             <div class="ccard" style="width:100%;" >
                 <div class="ccselector">
@@ -139,29 +139,28 @@
           <div class="cvv">CVV<br/>
           <input type="text" class="form-control CVV-no" placeholder="493" name="cvv" id="cvv"><div id="cvvinfo" style="display:none;">error</div></div></div></div></div>
   <div id="div2"><div id="paypal">Email Address<br><input type="email" placeholder="JohnSmith4382@target.co" class="email-ppal" name="email" id="email"><div id="ppalinfo" style="display:none;"><em>The Email Is Not Valid</em></div></div></div>
- 
+
 </div>
 
 
-         
-       
-          
+
+
+
         </div><!--End Of Payment Div -->
-          
-       
+
+
          <div id="2" class="type ein" >
             <div class="ein-number">EIN #(for schools & Charities if applicable)<br/>
           <input type="text" class="form-control ein" placeholder="Enter Ein #..." name="ein_number" id="einnumber"  ><div id="eininfo" style="display:none;"><em>The Number Is Not Valid</em></div></div>
 
           <div class="first-name"><br/>
           <input type="text" class="form-control firts" placeholder="Business Name" name="first_name" id="first"  ><div id="firstnameinfo" style="display:none;"><em>The Name Is Not Valid</em></div></div>
-         
-          
+
+
                 <div class="store-address"><input type="text" class="form-control address" placeholder="Address" name="store_address" id="store-address"><div id="storeaddressinfo" style="display:none;"><em>The Address Is Not Valid</em></div></div>
                 <div class="store-city"><input type="text" class="form-control city" placeholder="City" name="store_city" id="store-city"><div id="storecityinfo" style="display:none;"><em>The City Is Not Valid</em></div></div>
-                <div class="store-zip"><input type="text" class="form-control zip" placeholder="Zip Code" name="zip_code" id="store-zip"><div id="zipcodeinfo" style="display:none;"><em>The Zip Is Not Valid</em></div></div>
                 <div class="store-sate"><select class="form-control state" name="store-state" id="store-state">
-  <option value="-1" selected>State</option>              
+  <option value="-1" selected>State</option>
   <option value="AL">Alabama</option>
   <option value="AK">Alaska</option>
   <option value="AZ">Arizona</option>
@@ -213,22 +212,25 @@
   <option value="WV">West Virginia</option>
   <option value="WI">Wisconsin</option>
   <option value="WY">Wyoming</option>
-</select> <div id="storestateinfo" style="display:none;"><em>Please Choose One</em></div>      
+</select> <div id="storestateinfo" style="display:none;"><em>Please Choose One</em></div>
         </div>
+
+        <div class="store-zip"><input type="text" class="form-control zip" placeholder="Zip Code" name="zip_code" id="store-zip"><div id="zipcodeinfo" style="display:none;"><em>The Zip Is Not Valid</em></div></div>
+
       </div>
-        
+
         <button type="submit" class="btn btn-default upgrade-account submit" id="submit">Upgrade Account</button>
-        
+
       </form>
-    
-    
+
+
     </div><!-- End of the Column -->
-          
+
       </div><!-- End of the Row -->
 
-     
+
     </div><!-- End of the Container -->
-   
+
    </div> <!-- End of the Main -->
   
 
