@@ -4,25 +4,30 @@
       	 <meta charset="utf-8">
       	 <meta name="viewport" content="width=device-weidth, initial-scale=1.0">
       	 <title>Front Apron</title>
+          <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
       	 <link href="css/bootstrap.min.css" rel="stylesheet">
-         <link href="css/custom.css" rel="stylesheet">
-         <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+           <link href="css/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+         
          <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
           
-          <script>
+         <script>
+
   $(document).ready(function() {
     $("#datepicker1").datepicker();
   });
-  </script>
- <script>
+</script>
+<script>
   $(document).ready(function() {
     $("#datepicker2").datepicker({
       maxDate: +3
    });
   });
-  </script>
+</script>
          <SCRIPT LANGUAGE='JAVASCRIPT' TYPE='TEXT/JAVASCRIPT'>
 <!--
 var popupWindow=null;
@@ -246,15 +251,13 @@ if(infocus=='back'){popupWindow.blur();popupWindow.location=mypage;popupWindow.b
 
   });
  </script>
- <script>
- $(document).ready(function(){
-    $('#nav').on('click','.nav-item', function ( e ) {
-        e.preventDefault();
-        $(this).parents('#nav').find('.active').removeClass('active').end().end().addClass('active');
-        $(activeTab).show();
-    });
-});
- </script>
+ 
+ 
+
+ 
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
  </body>
  </html>
