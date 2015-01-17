@@ -1,15 +1,6 @@
 
 
 
-        $(document).ready(function () {
-     $('.type').hide();
-     $("#upgradeaccount").change(function () {
-      var selected = $("#upgradeaccount option:selected").val();
-       $('.type').hide();
-      $('#' + selected).show();
-
-     });
-   });
      
       $(document).ready(function () {
     
@@ -64,16 +55,6 @@ $(document).ready(function(){
 
 
 
-
-  $(document).ready(function() {
-    $("#datepicker1").datepicker();
-  });
-
-  $(document).ready(function() {
-    $("#datepicker2").datepicker({
-      maxDate: +3
-   });
-  });
 
 
 
