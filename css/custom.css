@@ -43,6 +43,7 @@ header .container .navbar-btn{float:right; margin-top:20px;}
 .head-signin-form .log:hover{padding:3px 8px; background-color:#73A221; border-radius:3px; color:#ffffff;}
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{color:#32328f;}
 .navbar-default .navbar-nav>li>a.active{color:#32328f; border-bottom:3px solid #32328f;}
+.navbar-form{box-shadow:0px 0px 0px !important; -webkit-box-shadow:0px 0px 0px !important;}
 
 /* Main - Home */
 
