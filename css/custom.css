@@ -370,11 +370,11 @@ background-image: url(../images/check-mark.png);
 background-repeat: no-repeat;
 background-position: 95% 7px;
 }
-
+.upgrade-div {margin-bottom:20px;}
 .upgrade-div .upgrade{width:260px; background-color:#e6e7e8; border:1px solid #32328f; border-radius:3px; color:#32328f; padding:3px 0px 3px 0px; margin-bottom:20px; margin-top:10px;}
 .upgrade-div .upgrade a {color:#32328f;}
 .update-form .cancel{
-	width: 80px;
+width: 80px;
 background-color: #636466;
 margin-right: 10px;
 }
