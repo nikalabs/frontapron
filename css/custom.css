@@ -23,7 +23,7 @@ Tags:
 }
 /* Header-Nav bar */
 
-.navbar-default{background-color:#7ab317; height:52px;}
+.navbar-default{background-color:#7ab317; height:auto;}
 .navbar-form{margin-top:6px;}
 .navbar-default .navbar-nav{padding-top:2px;}
 header{background-color:#32328f;}
@@ -604,9 +604,9 @@ margin-bottom: 20px;
 .account-form .last-name{margin-top:10px; margin-bottom:10px;}
 .account-form .password{margin-top:10px; margin-bottom:20px;}
 .type .store-address{margin-top: 10px; margin-bottom:10px;}
-.type .store-city{width:30%; float:left; margin-right: 18px; margin-bottom: 10px;}
-.type .store-zip{width:30%; float:left;  margin-bottom: 10px;}
-.type .store-sate{width:30%; float:left; margin-bottom: 10px; margin-right:18px;}
+.type .store-city{width:30%; float:left; padding-right:10px;  margin-bottom: 10px; margin-right:0px !important;}
+.type .store-zip{width:30%; float:left;  padding-right:10px; margin-bottom: 10px;}
+.type .store-sate{width:30%; float:left; margin-bottom: 10px; padding-right:10px;}
 .account-form  #upgradeaccount{margin-bottom:20px;}
 
 
@@ -698,6 +698,7 @@ margin-top: 10px;
 color: #ffffff;
 
 }
+
 
 .user-log{width:100px;}
 /* Biz Header */
