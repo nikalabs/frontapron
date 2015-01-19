@@ -686,7 +686,7 @@ margin-top: 10px;
 .btn.signed-in .caret{float:right; color:#ffffff; margin-top:15px;}
 .user-thumb{float:left;}
 .user-drop-down{z-index:100000000; width:200px;}
-.user-log{margin-top:17px;}
+.user-log{margin-top:17px; float:right;}
 .user-log .dropdown-toggle:active, .user-log.open .dropdown-toggle{background-color:#1e1e56;}
 .user-drop-down{background-color:#1e1e56; color:#ffffff;}
 .user-drop-down li> a{color:#ffffff;}
