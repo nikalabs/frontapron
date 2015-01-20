@@ -217,7 +217,8 @@ font-size:26px;
 .product-desp{width:50%; float:left;}
 .product-desp p{font-size:14px;}
 .create{width:48%; float:right; padding-top:20px;}
-.create .create-btn{float:right; width:175px; background-color:#7ab317; border:0px; color:#ffffff;}
+.create .create-btn{float:right; width:175px; background-color:#7ab317; border:0px; color:#ffffff; }
+
 .create .follow{
  width: 172px;
 float: right;
@@ -294,7 +295,7 @@ margin-top:20px;
 }
 
 
-
+.create-form .btn-lg.create-btn { background-color:#7ab317; border:0px; color:#ffffff; margin-top:20px;}
 
 /* Market Intel */
 #market-table{border-bottom: 3px solid #d9d9d9;}

@@ -126,7 +126,10 @@ if(infocus=='back'){popupWindow.blur();popupWindow.location=mypage;popupWindow.b
   </div></p>
 
   
-  <ul id="results" style="list-style:none; padding:0px; margin-bottom:20px;"></ul>
+  <ul id="results" style="padding:0px; margin-bottom:20px;"></ul>
+    
+  </div>
+
      <div><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   + Add Location
 </button>
@@ -153,15 +156,15 @@ if(infocus=='back'){popupWindow.blur();popupWindow.location=mypage;popupWindow.b
           
          <tr  class="table-header">
     
-    <td><input type="checkbox" value="123 Pomegranite St. Los Santos, CA 90213"><label> 123 Pomegranite St.<span> Los Santos, CA 90213</span></label>
+    <td><input type="checkbox"  id="address_line1" name="address_line1" value="N"  > <label for="address_line1" >123 Pomegranite St.<span> Los Santos, CA 90213<br/></span></label></input>
 </td>
 </tr>
 <tr>
-     <td><input type="checkbox" value="456 Orange Blvd Los Santos, CA 90213"><label> 456 Orange Blvd<span> Los Santos, CA 90213</span></label></td>
+     <td><input type="checkbox"  id="address_line2" name="address_line2" value="N" > <label for="address_line2">456 Orange Blvd<span> Los Santos, CA 90213<br/></span></label></input></td>
     
   </tr>
 <tr>      
- <td style="border-bottom:0px;"> <input type="submit" value="post" class="submit" id="submit_location" onclick="return false;"> </td>
+ 
 </tr>
 
 </form>
@@ -173,7 +176,7 @@ if(infocus=='back'){popupWindow.blur();popupWindow.location=mypage;popupWindow.b
    
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary" id="submit_location">Save changes</button>
       </div>
     </div>
   </div>
@@ -233,29 +236,44 @@ if(infocus=='back'){popupWindow.blur();popupWindow.location=mypage;popupWindow.b
    	</div><!-- End of the Footer Container -->
    </footer>
    <!-- End of the Footer -->
+ 
+
 
 
  <script>
+ 
+ 
  $(document).ready(function(){
+  var address = '';
+  $('#submit_location').click(function () { 
+   
+    $('input[type="checkbox"]').each(function() {
       
-     $('#inputs input').change(function() {
-  if (this.checked) {
-    $li = $('<li></li>');
-    $li.text(this.value);
+        if (this.checked) {
+            /*add*/ /*get label text associated with checkbox*/
+           var address = ($('label[for="'+this.name+'"]').html() + '');
+             $li = $('<li></li>');
+    $li.html(address);
     $('#results').append($li);
   }
-  else {
-    $('li:contains('+this.value+')', '#results').remove();
-  }
-});
+  else{
+     $('li:contains('+address+')', '#results').remove();
+   }
+ 
 
-  });
+       
+    });
+
+    });
+ 
+ });   
+
+
  </script>
  
- 
 
  
-    <script src="js/jquery.js"></script>
+<script src="js/jquery.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
