@@ -389,7 +389,7 @@ margin-right: 10px;
 .account-form .first-name{width:48%; float:left;}
 .account-form .last-name{width:50%; float:right; }
 .account-form .password{width:48%; float:left;}
-.account-form .again{width:50%; float:right;}
+.account-form .again{width:50%; float:right; margin-top:10px; margin-bottom:20px;}
 .account-form .form-group span{color:#636466; font-family:'Lato', sans-serif; font-size:13px; font-style:italic;}
 .account-form .business{}
 .account-form .form-group select{
