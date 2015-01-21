@@ -1,0 +1,370 @@
+<!doctype html>
+ <html>
+ <head>
+      	 <meta charset="utf-8">
+      	 <meta name="viewport" content="width=device-weidth, initial-scale=1.0">
+      	 <title>Front Apron</title>
+      	 <link href="css/bootstrap.min.css" rel="stylesheet">
+      	 <link href="css/custom.css" rel="stylesheet">
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <SCRIPT LANGUAGE='JAVASCRIPT' TYPE='TEXT/JAVASCRIPT'>
+<!--
+var popupWindow=null;
+function popup(mypage,myname,w,h,pos,infocus){
+
+if (pos == 'random')
+{LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+else
+{LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
+settings='width='+ w + ',height='+ h + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=no,location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';popupWindow=window.open('',myname,settings);
+if(infocus=='front'){popupWindow.focus();popupWindow.location=mypage;}
+if(infocus=='back'){popupWindow.blur();popupWindow.location=mypage;popupWindow.blur();}
+
+}
+// -->
+</script>
+ </head>
+ <body>
+   <header>
+ 	 <div class="container">
+ 		<a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+       <a href="http://nikalabs.info/frontapron/sign-up.html"><button type="button" class="btn btn-default navbar-btn">Sign in</button></a>
+ 		
+ 		
+ 	</div>
+   </header>
+ <!-- Start of Navigation Bar -->
+   <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+    	 <div class="navbar-header">
+    	 	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-FA-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    	
+       </div>
+    <div class="collapse navbar-collapse" id="bs-FA-navbar-collapse-1">
+    	<ul class="nav navbar-nav">
+    		<li><a href="index.html">HOME</a></li>
+    		<li><a href="index.html">BOOKMARKS</a></li>
+    		<li><a href="index.html">MY SPECIALS</a></li>
+    		         
+    	</ul>
+    	<form class="navbar-form navbar-right" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Coffee">
+                  <input type="text" class="form-control" placeholder="San Jose">
+                </div>
+                <button type="submit" class="btn btn-default search"><img src="images/search-icon.png"></button>
+        </form>
+      </div>
+
+    </div>
+   </nav>
+<!-- Start of Main Body -->
+   <div class="main">
+   	<div class="container">
+   	   <div class="row"><!-- Start of the First Row -->
+  	   <div class="col-md-4"><!-- Start of the First Column -->
+         <div class="page-header">
+        <h1>Filter</h1>
+      </div>
+       <table class="table" id="filter-table">
+         <tr  class="table-header">
+    <th class="Friends"><img src="images/friends-large.png"> <span>Friends</span></th>
+    <th></th>
+    <th class="button"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  <img src="images/add-button.png" >
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#32328f; color:#ffffff;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-search"></span> searches</h4>
+      </div>
+      <div class="modal-body" style="background-color:#f2f2f2;">
+       
+       
+      <div class="intro"></div>
+        <form action="filter.php" method="post" id="search-popup-form">
+          <div class="form-group">
+       <table class="table" id="popup-table" class="search-popup">
+         <tr  class="table-header">
+    <td>Category</td>
+    <td><select name="category" size="1" id="category"  type="select">
+  <option value="1">Resturant</option>
+  
+</select></div></td>
+</tr>
+<tr>
+  <td>Search String</td>
+     <td><div class="wrapper string"><input type="text" id="filterstring" placeholder="Donuts" class="search-string" name="fstring"><a href="#"><span class="glyphicon glyphicon-remove-circle"></span></a></div></td>
+    
+  </tr>
+<tr>  
+<td>Location</td>   
+ <td> <input type="text" placeholder="GPS, Zipcode, or Address" class="address"> </td>
+</tr>
+
+<tr>  
+<td></td>   
+ <td><span>Search Radius</span> <select class="radius" name="search_radius"><option>2 Miles</option> </select></td>
+</tr>
+<tr>
+  <td><input type="submit" name="submit" id="submit_post" value="post" class="btn btn-default adding" onclick="return false;" ></td>
+  <td><button type="submit" class="btn btn-default removing">Remove</button></td>
+  </tr>
+
+   </table>
+ </div>
+   </form>
+   
+
+
+        </div>
+   
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div></th><!-- Modal -->
+  </tr>
+  <tr>
+    <td>Dennis Green</td>
+    <td></td>
+    <td class="button"><img src="images/button-close.png"></td>
+  </tr>
+  <tr>
+   <td>Rett McLaughlin</td>
+    <td></td>
+    <td class="button"><img src="images/button-close.png"></td>
+  </tr>
+   <tr>
+    <td>Charles Neil</td>
+    <td></td>
+    <td class="button"><a href=""><img src="images/button-close.png" ></a></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr  class="table-header">
+    <th class="business"><img src="images/business-icon.png" > <span>Business</span></th>
+    <th></th>
+    <th class="button"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  <img src="images/add-button.png" >
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#32328f; color:#ffffff;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-search"></span> searches</h4>
+      </div>
+      <div class="modal-body" style="background-color:#f2f2f2;">
+       
+       
+      <div class="intro"></div>
+        <form action="filter.php" method="post" id="search-popup-form">
+          <div class="form-group">
+       <table class="table" id="popup-table" class="search-popup">
+         <tr  class="table-header">
+    <td>Category</td>
+    <td><select name="category" size="1" id="category"  type="select">
+  <option value="1">Resturant</option>
+  
+</select></div></td>
+</tr>
+<tr>
+  <td>Search String</td>
+     <td><div class="wrapper string"><input type="text" id="filterstring" placeholder="Donuts" class="search-string" name="fstring"><a href="#"><span class="glyphicon glyphicon-remove-circle"></span></a></div></td>
+    
+  </tr>
+<tr>  
+<td>Location</td>   
+ <td> <input type="text" placeholder="GPS, Zipcode, or Address" class="address"> </td>
+</tr>
+
+<tr>  
+<td></td>   
+ <td><span>Search Radius</span> <select class="radius" name="search_radius"><option>2 Miles</option> </select></td>
+</tr>
+<tr>
+  <td><input type="submit" name="submit" id="submit_post" value="post" class="btn btn-default adding" onclick="return false;" ></td>
+  <td><button type="submit" class="btn btn-default removing">Remove</button></td>
+  </tr>
+
+   </table>
+ </div>
+   </form>
+   
+
+
+        </div>
+   
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div></th>
+  </tr>
+  <tr>
+   <td>Target</td>
+    <td></td>
+    <td class="button"><a href=""><img src="images/button-close.png"></a></td>
+  </tr>
+   <tr>
+   <td>BestBuy</td>
+    <td></td>
+    <td class="button"><a href=""><img src="images/button-close.png"></a></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr  class="table-header">
+    <th class="searches"><img src="images/search-blue.png"> <span>Seraches</span></th>
+    <th></th>
+    <th class="button"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  <img src="images/add-button.png" >
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color:#32328f; color:#ffffff;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-search"></span> searches</h4>
+      </div>
+      <div class="modal-body" style="background-color:#f2f2f2;">
+       
+       
+      <div class="intro"></div>
+        <form action="filter.php" method="post" id="search-popup-form">
+          <div class="form-group">
+       <table class="table" id="popup-table" class="search-popup">
+         <tr  class="table-header">
+    <td>Category</td>
+    <td><select name="category" size="1" id="category"  type="select">
+  <option value="1">Resturant</option>
+  
+</select></div></td>
+</tr>
+<tr>
+  <td>Search String</td>
+     <td><div class="wrapper string"><input type="text" id="filterstring" placeholder="Donuts" class="search-string" name="fstring"><a href="#"><span class="glyphicon glyphicon-remove-circle"></span></a></div></td>
+    
+  </tr>
+<tr>  
+<td>Location</td>   
+ <td> <input type="text" placeholder="GPS, Zipcode, or Address" class="address"> </td>
+</tr>
+
+<tr>  
+<td></td>   
+ <td><span>Search Radius</span> <select class="radius" name="search_radius"><option>2 Miles</option> </select></td>
+</tr>
+<tr>
+  <td><input type="submit" name="submit" id="submit_post" value="post" class="btn btn-default adding" onclick="return false;" ></td>
+  <td><button type="submit" class="btn btn-default removing">Remove</button></td>
+  </tr>
+
+   </table>
+ </div>
+   </form>
+   
+
+
+        </div>
+   
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div></th>
+  </tr>
+  <tr>
+   <td>Coffee</td>
+    <td></td>
+    <td class="button"><a href=""><img class="forward" src="images/forward.png"></a><a href=""><img src="images/button-close.png"></a></td>
+  </tr>
+  <tr>
+    <td><div id="result"></div></td>
+    <td></td>
+    <td class="button"><a href=""><img class="forward" src="images/forward.png"></a><a href=""><img src="images/button-close.png"></a></td>
+  </tr>
+       </table
+  	   	
+  	</div><!-- End of the First Column -->
+  	        
+      </div><!-- End of the First Row -->
+
+    </div><!-- End of the Container -->
+   
+   </div> <!-- End of the Main -->
+   <!-- Start of the Footer -->
+   <footer class="footer">
+   	<div class="container">
+
+   	 <div class="row top">
+   	 	<div class="col-md-4">
+   	 		<ul class="footer-menu">
+   	 			<li><a href="#">About Front Apron</a></li>
+   	 			<li><a href="#">Businesses</a></li>
+   	 			<li><a href="#">Terms & Privacy</a></li>
+   	 			<li><a href="#">Blog</a></li>
+   	 			<li><a href="#">Help</a></li>
+   	 		</ul>
+   	 	</div><!-- End of the Footer First Column -->
+   	 	<div class="col-md-4">
+   	 	</div><!-- End of the Footer Second Column -->
+   	 	<div class="col-md-4">
+   	 	 <div class="footer-icons">
+   	 	  <a class="google-play"href="#"><img src="images/google-play.png"></a>
+   	 	  <a class="appstore"href="#"><img src="images/appstore.png"></a>
+   	 	 </div>
+   	 	 <div class="footer-socials">
+   	 	 	<a class="fbook"><img src="images/facebook.png"></a>
+   	 	 	<a class="twitter"><img src="images/twitter.png"></a>
+   	 	 	<a class="gplus"><img src="images/googleplus.png"></a>
+   	 	 </div>
+   	 	</div><!-- End of the Footer Third Column -->
+   	 </div><!-- End of the Footer Row Top -->
+   	 <div class="row bottom">
+   	 	<p class="copy-right">© 2014, Front Apron.  All Rights Reserved.</p>
+   	 </div>
+   	</div><!-- End of the Footer Container -->
+   </footer>
+   <!-- End of the Footer -->
+
+ <script src="js/jquery.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script>
+$(document).ready(function(){
+  $("#submit_post").click(function(){
+    var name=$("#filterstring").val();
+    $.post("filter.php",{fstring:name},function(result){
+      $("#result").append(result);
+    });
+     
+  });
+});
+</script>
+ </body>
+ </html>
