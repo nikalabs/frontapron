@@ -980,5 +980,19 @@ margin-bottom:20px;
     color:    #ffffff;
 }
 .password-note{width:100%; float:left; display:block; text-align:left;}
-.btn.upgrade-account{width:20%;}
+
 .account-form.payment .cvv{width:100%; float:left; }
+.button .edit{padding-right:10px;}
+
+.btn.like {
+z-index: 1000000000;
+position: absolute;
+width: 27px;
+height: 27px;
+background: #ffffff;
+top: 0px;
+right: -25px;
+border-radius: 50%;
+padding: 0px;
+}
+.btn.like .glyphicon-heart{font-size:18px; padding-top:4px; padding-right:2px;}
