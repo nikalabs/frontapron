@@ -52,6 +52,7 @@ font-weight:800;
 color:#32328f;
 font-size:30px;
 font-style:italic;
+
 }
 h1 small{float:right;}
 .thumbnail{padding:0px;}
@@ -996,3 +997,5 @@ border-radius: 50%;
 padding: 0px;
 }
 .btn.like .glyphicon-heart{font-size:18px; padding-top:4px; padding-right:2px;}
+#businessinfo.error{width:100%; height:20px; color:red; font-size:10px;}
+.donations h5 small{font-size:16px; float:right;}
