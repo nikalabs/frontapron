@@ -555,7 +555,7 @@ text-align: center;
 .account-form .ccnumber{margin-bottom:10px;}
 .account-form .cc-details{width:100%; float:left; margin-bottom:10px; }
 .account-form #ein{margin-bottom:10px;}
-.btn.upgrade-account{width:65%;}
+.btn.upgrade-account{width:45%;}
 #price-table{margin-bottom:10px;}
 #package* {background-color:transparent; border:0px; color:#000000;}
 .package{margin-bottom:10px; margin-top:10px;}
@@ -1001,3 +1001,4 @@ padding: 0px;
 .donations h5 small{font-size:16px; float:right;}
 #market-table .btn-success{width:100%;}
 .create-form #quantity{padding: 6px 6px;}
+.btn-success.upgrade-account{width:45%;}
