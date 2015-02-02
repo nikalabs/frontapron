@@ -228,7 +228,7 @@ padding-top:10px;
 padding-bottom:10px;
 }
 .create .time{
-width: 172px;
+width: 100%;
 float: right;
 text-align: center;
 padding-right:40px;
@@ -1005,3 +1005,12 @@ padding: 0px;
 .btn-success.upgrade-account{width:45%;}
 .glyphicon-heart.purple{color:#32328f;}
 .glyphicon-heart.green{color:#7ab317;}
+
+
+
+
+
+.navbar-default .col-md-6:first-child{width:50% !important; float:left!important;}
+.navbar-default .form-group{width:80% !important;}
+.navbar-default .navbar-form .form-control{width:48% !important; float: left !important; margin-right:5px !important;}
+
