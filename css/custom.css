@@ -825,9 +825,9 @@ font-family: OpenSans,'Helvetica Neue',Helvetica,Arial,FreeSans,sans-serif;
 }
 /** Index 2 **/
 
-.navbar-form.search .form-group{margin-left:20px; margin-top:12px;}
+.navbar-form.search .form-group{margin-left:20px; margin-top:12px; width:80%; float:left;}
 .head-signin-form.home{width:80px; float:right; padding-top:0px;}
-.navbar-form.search .form-group input{width:300px; height:30px;}
+.navbar-form.search .form-group input{width:45%; height:30px; float:left; margin-right:5px;}
 
 .navbar-form.search input{margin-bottom:5px;}
 
