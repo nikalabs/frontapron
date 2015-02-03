@@ -1071,3 +1071,10 @@ font-style: italic;
 .pass-change>tbody>tr>td{border-top:0px;}
 .pass-change #change{width:90%; background-color: #7ab317; color: #ffffff; border: 0px; padding:6px; border-radius:4px;}
 .pass-change>tbody>tr{ border-left:2px solid #ddd; border-right:2px solid #ddd;}
+
+.col-md-12 .navbar-form{width:50%; float:left;}
+.col-md-12 .navbar-collapse{width:50%; float:left;}
+
+@media only screen and (max-width: 768px){
+	.col-md-12 .navbar-collapse{width:100% !important; float:left;}
+}
