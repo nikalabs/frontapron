@@ -1027,5 +1027,36 @@ padding: 0px;
 	background: #32328f;
     color:#ffffff;
 }
-
+.credit-form  #creditlist{margin-bottom:20px;}
 .btn.credit{width:45%; background-color:#7ab317; color:#ffffff; border-radius:4px;}
+.credit-form .form-group p{color:#636466; font-family:'Lato', sans-serif; font-size:15px;}
+.credit-form .form-group input {
+background-color: #cccccc;
+box-shadow: 0px 0px 0px;
+margin-bottom:10px;
+}
+.credit-form .cc-details {
+width: 100%;
+float: left;
+}
+.credit-form .exp-date {
+width: 30%;
+float: left;
+}
+.credit-form .exp-date #year {
+width: 66px;
+float: left;
+text-align: center;
+}
+.credit-form .cvv {
+width: 70%;
+float: right;
+}
+.credit-form .exp-date #month{
+width: 66px;
+float: left;
+text-align: center;
+margin-right: 10px;
+}
+.credit-form .card-name input{width:65%;}
+.credit-form #paypal input{width:65%;}
