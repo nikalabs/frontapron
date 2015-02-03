@@ -1060,3 +1060,9 @@ margin-right: 10px;
 }
 .credit-form .card-name input{width:65%;}
 .credit-form #paypal input{width:65%;}
+.table .choose-payment{font-family: 'Lato', sans-serif;
+font-weight: 500;
+color: #32328f;
+font-size: 22px;
+font-style: italic;
+}
