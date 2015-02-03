@@ -44,7 +44,7 @@
     <th>Expires on</th>
   </tr>
   <tr class="saved-option" style="border-bottom:1px solid;">
-    <td><label><input type="radio" name="paymen-option" value="visa"><span>  Visa ending in 1111</span></label></td>
+    <td><label><input type="radio" name="payment-option" value="visa" id="payment-option"><span>  Visa ending in 1111</span></label></td>
     <td>John Smith</td>
     <td>mm/yyyy</td>
   </tr>
@@ -86,6 +86,7 @@
 </div>
 
  <button type="submit" class="btn btn-default credit" id="credit">Continue</button> <button type="cencel" class="btn btn-default cancel" id="cancel">Cancel</button>
+ <div id="credit-paymentinfo" style="display:none;"><em>Select a Credit Method and/or Add New Credit Method</em></div>
 </form>
 
 
@@ -111,6 +112,30 @@ $(document).ready(function() {
         $(this).closest('.box').addClass('highlight');
   });
 });
+      </script>
+
+      <script>
+$(document).ready(function() {
+
+       $('#credit').click(function() {
+
+ if($('input[name=payment-option]:checked').length<=0){
+
+   $("#credit-paymentinfo").addClass("error");
+
+  return false;
+
+}else{
+  
+  $("#credit-paymentinfo").removeClass("error");
+  return true;
+}
+
+ 
+
+ });
+});
+
       </script>
 
 
