@@ -82,7 +82,7 @@
                 <div class="store">
                   <input type="checkbox" name="store" value="store" id="store"> Is a store?<br></div>
 
-         
+                <div class="business-phone"><input type="text" class="form-control phone" placeholder="5105555555" name="business_phone" id="phone"></div>
           
                 <div class="store-address"><input type="text" class="form-control address" placeholder="Address" name="address" id="address"><div id="addressinfo" style="display:none;"><em>The Address Is Not Valid!</em></div></div>
                 <div class="store-city"><input type="text" class="form-control city" placeholder="City" name="city" id="city"><div id="cityinfo" style="display:none;"><em>The City Is Not Valid!</em></div></div>
@@ -143,37 +143,10 @@
 </select>   <div id="stateinfo" style="display:none;"><em>Please Choose One</em></div>    
         </div>
                 
-            Payment Method<br/><!--Start Payment Div -->
-            <div class="ccard" style="width:100%;" >
-                <div class="ccselector">
-                  <label>
-                 <input id="id_radio1" type="radio" name="name_radio1" value="value_radio1" />
-                 <img src="images/ccard.png">
-                 </label>
-                <label>
-                 <input id="id_radio2" type="radio" name="name_radio2" value="value_radio2" />
-                 <img src="images/paypal.png">
-                </label>
-              </div>
+            
 
 
-  <div id="div1">
-  <div  id="creditcard">
-    <div class="card-name">Name on Card<br/>
-          <input type="text" class="form-control card-name" placeholder="John Smith" name="name" id="card-name"><div id="cardinfo" style="display:none;"><em>The Name Is Not Valid!</em></div></div>
-    <div class="ccnumber">Credit Card Number<br/>
-          <input type="password" class="form-control ccnumber" id="ccnumber" placeholder="&#9679;&#9679;&#9679;&#9679; - &#9679;&#9679;&#9679;&#9679; - &#9679;&#9679;&#9679;&#9679; - 4392" name="credit_number" size="8" ><div id="creditinfo" style="display:none;"><em>The Number Is Not Valid!</em></div></div>
-          <div class="cc-details">
-          <div class="exp-date">Expiration Date<br/>
-          <input type="text" class="form-control month" placeholder="11" name="expiration_date" id="month"><input type="text" class="form-control year" placeholder="16" name="expiration_year" id="year">
-          <div id="monthinfo" style="display:none;"><em>Invalid Month</em></div><div id="yearinfo" style="display:none;"><em>Invalid Year</em></div>
-
-        </div>
-          <div class="cvv">CVV<br/>
-          <input type="text" class="form-control CVV-no" placeholder="493" name="cvv" id="cvv"><div id="cvvinfo" style="display:none;">Invalid</div></div></div></div></div>
-  <div id="div2"><div id="paypal">Email Address<br><input type="email" placeholder="JohnSmith4382@target.co" class="email-ppal" name="email" id="email"><div id="ppalinfo" style="display:none;"><em>The Email Is Not Valid</em></div></div></div>
- 
-</div>
+  
 
 
          
@@ -235,7 +208,13 @@
  <script src="js/bootstrap.min.js"></script>
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
  <script src="js/custom.js"></script>
- 
+ <script>
+      $(document).ready(function() {
+    $("#phone").keypress(function(event) {
+        return /\d/.test(String.fromCharCode(event.keyCode));
+    });
+});
+      </script>
 
       <script>
       $(document).ready(function() {
