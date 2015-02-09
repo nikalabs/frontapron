@@ -1109,7 +1109,7 @@ margin-bottom:10px;
 
 
 
-.inventory th, td{
+.inventory td{
 border-width: 1px;
 padding: 0.5em;
 position: relative;
@@ -1143,3 +1143,4 @@ text-align: left;
 .meta{width:100%;}
 .balance{width:100%;}
 .inventory{width:100%;}
+
