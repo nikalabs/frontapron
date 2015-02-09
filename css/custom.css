@@ -66,7 +66,7 @@ h1 small{float:right;}
 .thumbnail .caption h5{font-size:14px; color:#666666; float:left; width:100%;}
 .thumbnail .caption h5 small{float:right; font-size:30px; font-family:'Lato', sans-serif; color:#70a711; margin-top:-10px;}
 .thumbnail .image-container{height:200px; overflow:hidden;}
-.thumbnail .caption a{float:left;}
+.thumbnail .caption a{float:left; padding-right:10px;}
 
 /* Footer */
 .footer-menu li{padding:0px 10px; float:left;}
