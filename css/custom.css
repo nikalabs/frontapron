@@ -218,6 +218,7 @@ color:#32328f;
 font-size:26px;
 }
 .product-desp{width:50%; float:left;}
+.product-desp h5 small{color: #7ab317; font-size: 28px;}
 .product-desp p{font-size:14px;}
 .create{width:48%; float:right; padding-top:20px;}
 .create .create-btn{width:175px; background-color:#7ab317; border:0px; color:#ffffff; }
