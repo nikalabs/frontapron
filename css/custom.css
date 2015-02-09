@@ -227,6 +227,8 @@ text-align: center;
 padding-top:10px;
 padding-bottom:10px;
 }
+.time .glyphicon-time{margin-right:20px;}
+.create #bookmark{text-align:center;}
 .create .time{width:100%; float:right; text-align:center;}
 .create.business .time{float:right; width:100% !important; text-align:center;}
 .create .time h6{text-align:center;}
