@@ -218,16 +218,16 @@ font-size:26px;
 .product-desp{width:50%; float:left;}
 .product-desp p{font-size:14px;}
 .create{width:48%; float:right; padding-top:20px;}
-.create .create-btn{float:right; width:175px; background-color:#7ab317; border:0px; color:#ffffff; }
+.create .create-btn{width:175px; background-color:#7ab317; border:0px; color:#ffffff; }
 
 .create .follow{
- width: 172px;
+ width: 100%;
 float: right;
 text-align: center;
 padding-top:10px;
 padding-bottom:10px;
 }
-.create .time{width:80%; float:right; text-align:center;}
+.create .time{width:100%; float:right; text-align:center;}
 .create.business .time{float:right; width:100% !important; text-align:center;}
 .create .time h6{text-align:center;}
 .create .time div{text-align:center;}
