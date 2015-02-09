@@ -1,0 +1,127 @@
+<html><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script>
+<head>
+	<style>article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio[controls],canvas,video{display:inline-block}[hidden],audio{display:none}mark{background:#FF0;color:#000}</style>
+		<meta charset="utf-8">
+		<title>Invoice</title>
+		
+          <link href="css/bootstrap.min.css" rel="stylesheet">
+      	 <link href="css/custom.css" rel="stylesheet">
+      	 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+		<script src="script.js"></script><style type="text/css"></style>
+	<script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/telemetry.js"></script><script src="chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/menu_handler.js"></script></head>
+	<body>
+		<div class="main">
+    <div class="container">
+		 <div class="page-header">
+			<h1>Invoice</h1>
+		</div>
+
+
+			<div class="row">
+      <div class="col-md-4">
+			<address contenteditable="">
+				<p>Jonathan Neal</p>
+				<p>101 E. Chapman Ave<br>Orange, CA 92866</p>
+				
+			</address>
+		</div>
+
+
+		<div class="col-md-4">
+		</div>
+
+		<div class="col-md-4">
+			<span><img alt="" src="logo.png"><input type="file" accept="image/*"></span>
+		</div>
+	</div><!-- End of the First Row -->
+     
+		<article>
+			<div class="row">
+			<h3>Recipient</h3>
+			<div class="col-md-4">
+			<address contenteditable="">
+				<p>Some Company<br>c/o Some Guy</p>
+			</address>
+		</div>
+
+		<div class="col-md-4">
+		</div>
+
+		<div class="col-md-4">
+		
+			<table class="meta">
+				<tbody><tr>
+					<th><span contenteditable="">Invoice #</span></th>
+					<td><span contenteditable="">101138</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable="">Date</span></th>
+					<td><span contenteditable="">January 1, 2012</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable="">Amount Due</span></th>
+					<td><span id="prefix" contenteditable="">$</span><span>600.00</span></td>
+				</tr>
+			</tbody></table>
+			</div>
+
+		</div><!-- End of the Second Row -->
+		<div class="row">
+			<table class="inventory" style="margin-top:30px;" id="market-table">
+				<thead>
+					<tr class="table-header">
+						<th><span contenteditable="">Item</span></th>
+						<th><span contenteditable="">Description</span></th>
+						<th><span contenteditable="">Rate</span></th>
+						<th><span contenteditable="">Quantity</span></th>
+						<th><span contenteditable="">Price</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a class="cut"></a><span contenteditable="">Front End Consultation</span></td>
+						<td><span contenteditable="">Experience Review</span></td>
+						<td><span data-prefix="">$</span><span contenteditable="">150.00</span></td>
+						<td><span contenteditable="">4</span></td>
+						<td><span data-prefix="">$</span><span>600.00</span></td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="add"></a>
+		</div><!-- End of the Third Row -->
+		<div class="row" style="margin-top:30px;">
+			<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+			<table class="balance">
+				<tbody><tr>
+					<th><span contenteditable="">Total</span></th>
+					<td colspan="2"><span data-prefix="">$</span><span>600.00</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable="">Amount Paid</span></th>
+					<td colspan="2"><span data-prefix="">$</span><span contenteditable="">0.00</span></td>
+				</tr>
+				<tr>
+					<th><span contenteditable="">Balance Due</span></th>
+					<td colspan="2"> <span data-prefix="">$</span><span>600.00</span></td>
+				</tr>
+			</tbody></table>
+		</div>
+			</div><!-- End of the Fourth Row -->
+		</article>
+		<aside>
+			
+			<h3><span contenteditable="">Additional Notes</span></h3>
+			<div contenteditable="">
+				<p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
+			</div>
+		
+		</aside>
+	
+</div>
+</div>
+</body></html>

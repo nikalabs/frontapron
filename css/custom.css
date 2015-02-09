@@ -1106,3 +1106,40 @@ margin-bottom:10px;
 .note .page-header{margin:0px 0px 0px;}
 .note .glyphicon-asterisk{color:#32328f;}
 .note p{font-style:italic; color:#636466; font-size:13px;}
+
+
+
+.inventory th, td{
+border-width: 1px;
+padding: 0.5em;
+position: relative;
+text-align: left;
+border-radius: 0.25em;
+border-style: solid;
+}
+
+.meta th{
+	background: #EEE;
+border-color: #BBB;
+border-radius: 0.25em;
+border-style: solid;
+border-width: 1px;
+padding: 0.5em;
+position: relative;
+text-align: left;
+}
+
+.balance th{
+	background: #EEE;
+border-color: #BBB;
+border-radius: 0.25em;
+border-style: solid;
+border-width: 1px;
+padding: 0.5em;
+position: relative;
+text-align: left;
+}
+
+.meta{width:100%;}
+.balance{width:100%;}
+.inventory{width:100%;}
