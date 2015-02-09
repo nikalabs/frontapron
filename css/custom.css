@@ -1101,7 +1101,7 @@ margin-bottom:10px;
 
 
 /** Request to Merge **/
-.note{width:100%; float:left; margin-top:30px;}
+.note{width:100%; float:left; margin-top:30px; border-top:1px solid #eee;}
 
 .note .page-header{margin:0px 0px 0px;}
 .note .glyphicon-asterisk{color:#32328f;}
