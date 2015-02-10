@@ -35,6 +35,9 @@
         <label class="radio"><input type="radio" name="amount" value="50"><span> $50.00</span></label>
 </div>
 
+<div class="box">
+        <label class="radio"><input type="radio" name="code-option" value="code" id="code-option"><span> code</span></label>
+</div>
 </div>
 
 <table class="table" id="market-table">
@@ -82,7 +85,7 @@
 
 
 <div class="coupon">Coupon Code<br/>
-          <input type="text" class="form-control coupon-code" placeholder="Enter Code..." name="coupon_code" id="coupon"><div id="credit-paymentinfo" style="display:none;"><em>Please Enter The Code!</em></div></div>
+          <input type="text" class="form-control coupon-code" placeholder="Enter Code..." name="coupon_code" id="coupon"><div id="code-paymentinfo" style="display:none;"><em>Please Enter The Code!</em></div></div>
 
 
 
@@ -121,7 +124,40 @@ $(document).ready(function() {
   $('#credit').click(function() {
         
 
- if($('input[name=payment-option]:checked').length<=0 ){
+ if($('input[name=payment-option]:checked').length<=0){
+ if($('input[name=code-option]:checked').length<=0){
+ 
+
+   $("#credit-paymentinfo").addClass("error");
+
+   return false;
+
+}else{
+ 
+  $("#credit-paymentinfo").removeClass("error");
+
+
+  return true;
+}
+
+  
+  
+}
+
+ 
+
+ });
+});
+
+      </script>
+      
+      <script>
+$(document).ready(function() {
+
+  $('#credit').click(function() {
+        
+
+ if($('input[name=code-option]:checked').length>0 ){
   var coupon_code = $("#coupon");
 
   coupon_code.blur(validateCoupon_code);
@@ -136,13 +172,13 @@ $(document).ready(function() {
 function validateCoupon_code(){
   if (coupon_code.val().length<1){
   
-  $("#credit-paymentinfo").addClass("error");
+  $("#code-paymentinfo").addClass("error");
 
    return false;
 
 }else{
  
-  $("#credit-paymentinfo").removeClass("error");
+  $("#code-paymentinfo").removeClass("error");
 
 
   return true;
