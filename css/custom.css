@@ -312,7 +312,7 @@ margin-top:20px;
 #market-table .viewer{padding-top:15px; color:#636466; font-family:'Lato', sans-serif;}
 #market-table .viewer .glyphicon-eye-open{color:#77787b; padding-right:5px;}
 #market-table .name{color:#636466; font-family:'Lato', sans-serif; padding-top:15px;}
-#market-table .day-badge-off{background-image:url(../images/day-badge-off.png); text-align:center; height:48px; background-position: right center; color:#ffffff; background-repeat:no-repeat; padding-left:20px;}
+#market-table .day-badge-off{background-image:url(../images/day-badge-off.png); text-align:center; height:48px; width:84px; background-position: right center; color:#ffffff; background-repeat:no-repeat; padding-left:20px;}
 
 
 /* Giving Back */
