@@ -35,8 +35,9 @@
         <label class="radio"><input type="radio" name="amount" value="50"><span> $50.00</span></label>
 </div>
 
-<div class="box">
-        <label class="radio"><input type="radio" name="code-option" value="code" id="code-option"><span> code</span></label>
+<div class="box highlight">
+       
+                  <input type="checkbox" name="code_option" value="code" id="code_option"> Coupon Code<br>
 </div>
 </div>
 
@@ -125,7 +126,7 @@ $(document).ready(function() {
         
 
  if($('input[name=payment-option]:checked').length<=0){
- if($('input[name=code-option]:checked').length<=0){
+ if(!$("#code_option").is(':checked')){
  
 
    $("#credit-paymentinfo").addClass("error");
@@ -157,7 +158,7 @@ $(document).ready(function() {
   $('#credit').click(function() {
         
 
- if($('input[name=code-option]:checked').length>0 ){
+ if($("#code_option").is(':checked')){
   var coupon_code = $("#coupon");
 
   coupon_code.blur(validateCoupon_code);
