@@ -428,7 +428,7 @@ border-radius: 4px;
 .account-form input:-ms-input-placeholder { /* Internet Explorer 10+ */
     color:    #ffffff;
 }
-.account-form .btn{width:190px; background-color:#7ab317; color:#ffffff; border:0px;}
+.account-form .btn{width:190px; background-color:#7ab317; color:#ffffff; border:0px; float:left;}
 
 
 .account-form .form-group input.pass{
