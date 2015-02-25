@@ -14,7 +14,7 @@ Tags:
 */
 
 /*START making Changes to override css*/
-body{min-height:100%; }
+body{height:100%; }
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus{outline:0px !important; outline-offset:0px !important;}
 .btn:focus{outline:0px !important;}
 .no-margin{
@@ -73,7 +73,7 @@ h1 small{float:right;}
 /* Footer */
 .footer-menu li{padding:0px 10px; float:left;}
 
-.footer{background-color:#f1f1f1; color:#999; padding-top:20px; margin-top:70px; padding-bottom:20px; position: absolute; top:100%; width: 100%; height:144px; display:block;}
+.footer{background-color:#f1f1f1; color:#999; padding-top:20px; margin-top:144px; padding-bottom:20px; position: absolute; top:100%; width: 100%; height:144px; display:block;}
 .footer ul{list-style:none; margin-left:0px; padding-left:10px;}
 .footer a{color:#999;}
 .footer .copy-right{padding-left:20px; font-size:12px; width:100%; float:left; padding-top: 10px;}
