@@ -943,10 +943,10 @@ font-size:16px;
 font-weight:400;
 padding-bottom:30px;
 }
-.decline-b button{width:45%; float:left; height:53px; background-color:#c3090a; color:#ffffff; font-size:17px;}
-.accept-b button{width:45%; float:left; height:53px;  color:#ffffff; margin-left:10px; font-size:17px; background-color:#7ab318;}
-.decline-b button .glyphicon{padding-right:5px; font-size:16px;}
-.accept-b button .glyphicon{padding-right:5px; font-size:16px;}
+.decline-b .btn{width:45%; float:left; height:53px; background-color:#c3090a; color:#ffffff; font-size:17px;}
+.accept-b .btn{width:45%; float:left; height:53px;  color:#ffffff; margin-left:10px; font-size:17px; background-color:#7ab318;}
+.decline-b .btn .glyphicon{padding-right:5px; font-size:16px;}
+.accept-b .btn .glyphicon{padding-right:5px; font-size:16px;}
 #reques-user-name{background-color:#b8b9bb; color:#ffffff;}
 #account-id{background-color:#b8b9bb; color:#ffffff;}
 .cancel-b{width:30%; float:left;}
