@@ -15,6 +15,7 @@ Tags:
 
 /*START making Changes to override css*/
 body{height:100%; }
+.main{height:100%; position:relative;}
 .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus{outline:0px !important; outline-offset:0px !important;}
 .btn:focus{outline:0px !important;}
 .no-margin{
