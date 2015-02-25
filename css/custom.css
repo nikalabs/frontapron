@@ -1,3 +1,4 @@
+es (1002 sloc)  39.141 kb RawBlameHistory   
 /*
 Theme Name: FRONT APRON
 Theme URI: http://www.nikalabs.com/
@@ -72,7 +73,7 @@ h1 small{float:right;}
 /* Footer */
 .footer-menu li{padding:0px 10px; float:left;}
 
-.footer{background-color:#f1f1f1; color:#999; padding-top:20px; margin-top:70px; padding-bottom:20px;}
+.footer{background-color:#f1f1f1; color:#999; padding-top:20px; margin-top:70px; padding-bottom:20px; position: absolute; bottom: 0; width: 100%; height:141px;}
 .footer ul{list-style:none; margin-left:0px; padding-left:10px;}
 .footer a{color:#999;}
 .footer .copy-right{padding-left:20px; font-size:12px; width:100%; float:left; padding-top: 10px;}
